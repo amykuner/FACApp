@@ -69,7 +69,7 @@ h3 {color: #F8FFE5;
   
 p {color: #F8FFE5;
  font-family: "Libre Franklin", sans-serif;
- font-size: 1rem;
+ font-size: 1.5em;
  text-align: center;
  }
  .blue-background {
@@ -84,7 +84,7 @@ p {color: #F8FFE5;
  } 
  
  .left-img{
- max-width:40%;
+ max-width:100%;
  margin: 2px;
  height:auto;
  grid-column: 1;
@@ -93,7 +93,7 @@ p {color: #F8FFE5;
 
 .wrapper{
   display: grid;
-  grid-template-columns:repeat(3, 1fr);
+  grid-template-columns:repeat(2, 1fr);
   gap: 50px;
   grid-auto-rows: minimax(100px, auto);
 }
