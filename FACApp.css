@@ -1,0 +1,100 @@
+    .tab{
+   overflow: hidden;
+   border: none;
+   background-color: #38A3A5;
+   }
+   .tab button {
+   color: #F8FFE5;
+   background-color: #38A3A5 ;
+   font-family: "Libre Franklin", sans-serif;
+   float: right;
+   outline: none;
+   cursor: pointer;
+   padding: 11px 14px;
+   transition: 0.5s;
+   border: 0;
+   }
+   
+   .tab button:hover {
+   background-color: #22577A
+   }
+   
+   .tab button.active{
+   background-color: #38A3A5;
+   }
+   
+   .tabcontent {
+   	display: none;
+    padding: 10px;
+    border: none;  
+    animation: fadeEffect 1s;
+   }
+   
+   @keyframes fadeEffect{
+   from {opacity:0;}
+   to {opacity: 1;}
+   }
+   
+body {
+	background-color: #38A3A5}
+    
+    
+h1 {color: #F8FFE5;
+	text-align:center;
+  font-family: "Libre Franklin", sans-serif;
+  }
+ 
+ h2 {color: #F8FFE5;
+ text-align:center;
+  font-family: "Libre Franklin", sans-serif;
+  }
+  
+h3 {color: #F8FFE5;
+text-align:center;
+  font-family: "Libre Franklin", sans-serif;
+  }
+
+   
+p {color: #F8FFE5;
+  font-family: "Libre Franklin", sans-serif;
+  text-align:center;
+  }
+  .blue-background {
+  	background-color: #38A3A5}
+  .larger-image{width:500px;}
+  .yellow-text{color: #F8FFE5;}
+  
+  .responsive-img{
+  	max-width:100%;
+    margin: 0px -50px 0px 0px ;
+    height:auto;
+  } 
+  
+  .left-img{
+  max-width:40%;
+  margin: 10px;
+  height:auto;
+  float: left;
+  }
+  
+  .right-img{
+  max-width:40%;
+  margin: 10px;
+  height:auto;
+  float: right;
+ }
+ 
+ .hero-img {
+  background-image: url("https://cdn.mos.cms.futurecdn.net/zmo9JBr3EnsnDXmvYqCXqK-970-80.jpg.webp");
+  height: 400px;
+  max-width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  }
+.hero-text {
+  font-size: xx-large;
+  padding-top: 40%;
+  padding-bottom: 40%;
+}
