@@ -1,5 +1,3 @@
-/* tab info */
-
 .tab{
   overflow: hidden;
   border: none;
@@ -15,6 +13,7 @@
   padding: 11px 14px;
   transition: 0.5s;
   border: 0;
+  font-size: 2vw;
   }
   
   .tab button:hover {
@@ -61,7 +60,7 @@ h3 {color: #F8FFE5;
   
 p {color: #F8FFE5;
  font-family: "Libre Franklin", sans-serif;
- font-size: 1.5em;
+ font-size: 3vw;
  text-align: center;
  }
  .blue-background {
@@ -69,16 +68,9 @@ p {color: #F8FFE5;
  .larger-image{width:500px;}
  .yellow-text{color: #F8FFE5;}
  
- .responsive-img{
-   max-width:100%;
-   margin: 0px -50px 0px 0px ;
-   height:auto;
- } 
- 
-
  .hero-img {
     background-image: url("https://cdn.mos.cms.futurecdn.net/zmo9JBr3EnsnDXmvYqCXqK-970-80.jpg.webp");
-    height: 400px;
+    height: 40vh;
     max-width:100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -86,10 +78,11 @@ p {color: #F8FFE5;
     position: relative;
     display: flex;
     align-items: center;
+    justify-content: center;
  }
 
  .hero-text {
-    font-size: xx-large;
+    font-size: 2vw;
     text-align: center;
    }
 
