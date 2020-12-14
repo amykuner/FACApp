@@ -1,19 +1,24 @@
 .tab{
+  display: flex;
+  flex-direction: row-reverse;
   overflow: hidden;
   border: none;
   background-color: #38A3A5;
+  position: relative; 
   }
-  .tab button {
+  .tab button{
   color: #F8FFE5;
   background-color: #38A3A5 ;
   font-family: "Libre Franklin", sans-serif;
-  float: right;
   outline: none;
   cursor: pointer;
   padding: 11px 14px;
   transition: 0.5s;
   border: 0;
   font-size: 2vw;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+  width: auto;
   }
   
   .tab button:hover {
@@ -60,7 +65,7 @@ h3 {color: #F8FFE5;
   
 p {color: #F8FFE5;
  font-family: "Libre Franklin", sans-serif;
- font-size: 3vw;
+ font-size: 1.75vw;
  text-align: center;
  }
  .blue-background {
