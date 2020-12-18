@@ -6,10 +6,22 @@
 </head>
 <body>
   <div class="tab">
-    <button class="tablinks" onclick="chooseTab(event, 'Other Programmers')">Other Stuff</button>
-    <button class="tablinks" onclick="chooseTab(event, 'Why FAC')" >Why FAC?</button>
-    <button class="tablinks" onclick="chooseTab(event, 'About Me')">About Me</button>
-    <button class="tablinks" onclick="chooseTab(event, 'Home')" id="defaultTab">Home</button>
+    <button class="tablinks" onclick="chooseTab(event, 'Other Programmers')" id="OSButton">
+      <span class="icon"> <i class="fas fa-home"></i></span>
+      <span class="tabtext"> Other Stuff</span>
+    </button>
+    <button class="tablinks" onclick="chooseTab(event, 'Why FAC')" id="WFACButton">
+      <span class="icon"> <i class="far fa-question-circle"></i></span>
+      <span class="tabtext"> Why FAC? </span>
+    </button>
+    <button class="tablinks" onclick="chooseTab(event, 'About Me')" id="aboutMeButton">
+      <span class="icon"> <i class="far fa-user-circle"></i></span>
+      <span class="tabtext"> About Me</span>
+    </button>
+    <button class="tablinks" onclick="chooseTab(event, 'Home')" id="homeButton">
+      <span class="icon"> <i class="fas fa-home"></i></span>
+      <span class="tabtext"> Home</span>
+    </button>
   </div>
   
   <div id="Other Programmers" class="tabcontent">
