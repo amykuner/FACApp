@@ -5,7 +5,8 @@
   border: none;
   background-color: #abe9fe;
   position: relative; 
-  }
+}
+
 .tab button{
   color: #000000;
   background-color: #abe9fe ;
@@ -47,6 +48,7 @@ body {
   margin: 0;  
   position: relative;
   padding-bottom: 4vh;
+  text-align: center;
 }
    
 h1 {color: #000000;
@@ -72,28 +74,29 @@ p {color: #000000;
  text-align: center;
 }
 
-.diag-box-one {
+#diag-box-one {
   background-image:linear-gradient(45deg,#e005a4, #8c0367);
   transform:skewY(10deg);
+  text-align: center;
 }
 
-.diag-box-two {
+#diag-box-two {
   background-image:linear-gradient(45deg,#fe8372, #fe4c34);
   transform:skewY(-4deg);
+  text-align: center;
 }
 
-.diag-box-three {
+#diag-box-three {
   background-image:linear-gradient(45deg,#e005a4, #e005a4);
   transform:skewY(-10deg);
 }
  
-.dbo-content {
-  max-width:90vw;
+#dbo-content {
   transform:skewY(-10deg);
-  text-align: center;
+  text-align:center;
 }
 
-.dbo-content-two {
+#dbo-content-two {
   max-width:90vw;
   transform:skewY(4deg);
   text-align: center;
@@ -119,38 +122,16 @@ p {color: #000000;
   border: 10px solid  black;*/
 }
 
-.wrapper{
-  display:flex;
-  flex-flow: column wrap;
-  justify-content: space-around;
-}
-
 .flexbox-row{
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
 }
 
-.text-one-home{
-  padding: 10px;
-}
-
 .left-img{
   max-width:97%;
   margin: 2px;
   height:auto;
-  padding: 10px;
-}
-
-.text-two-home{
-  padding: 10px;
-}
-
-.text-three-home{
-  padding: 10px;
-}
-
-.text-four-home{
   padding: 10px;
 }
 
