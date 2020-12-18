@@ -36,7 +36,7 @@ function horiText(skewVal, BoxID, BoxText){
   //convert skewval to radians
   let skewRad = Math.abs(skewVal)*Math.PI/180;
   //set text size to 66% of screen 
-  text.style.maxWidth = screen.width*0.7;
+  text.style.maxWidth = screen.width*0.6;
   //console.log(text.style.maxWidth);
   //console.log(Math.tan(skewRad));
   box.style.paddingTop = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
