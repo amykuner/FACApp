@@ -148,13 +148,19 @@ main {
 
 .icon{
   display: none;
+  font-size: large;
 }
 
 .tabtext{
   display: inline-block;
 }
 
-@media screen and (max-width: 700px) and (orientation:portrait){
+@media all and (max-width: 801px){
   .icon {display:inline-block;}
   .tabtext {display:none;}
 }
+
+@media all and (max-device-width: 700px){
+    .icon {display:inline-block;}
+    .tabtext {display:none;}
+  }
