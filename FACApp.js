@@ -9,7 +9,7 @@ function  chooseTab(event, tabName){
   document.getElementById(tabName).classList.add("active");
 }
     //setting the default tab as our first page
-document.getElementById("defaultTab").click();
+document.getElementById("homeButton").click();
 
 function findTabWidth(number){
 let tabButtons = document.getElementsByClassName("tablinks")
@@ -24,7 +24,7 @@ let tabButtons = document.getElementsByClassName("tablinks")
 }
 findTabWidth(document.getElementsByClassName("tablinks").length)
 
-//function tabIcons()
+console.log(document.getElementById("homeButton").innerText);
 
 function horiText(skewVal, BoxID, BoxText){
   var box = document.getElementById(BoxID);
@@ -37,12 +37,14 @@ function horiText(skewVal, BoxID, BoxText){
   let skewRad = Math.abs(skewVal)*Math.PI/180;
   //set text size to 66% of screen 
   text.style.maxWidth = screen.width*0.6;
-  //console.log(text.style.maxWidth);
-  //console.log(Math.tan(skewRad));
+  text.style.paddingLeft = screen.width*0.1;
+  text.style.paddingRight = screen.width*0.1;
   box.style.paddingTop = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
   box.style.paddingBottom = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
   //console.log(box.style);
 }
 
-horiText(11, "diag-box-one", "dbo-content");
-horiText(-4, "diag-box-two", "dbo-content-two");
+
+horiText(8, "diag-box-one", "dbo-content");
+horiText(8, "diag-box-two", "dbo-content-two");
+horiText(8, "diag-box-three", "dbo-content-three");
