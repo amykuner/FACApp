@@ -23,3 +23,27 @@ let tabButtons = document.getElementsByClassName("tablinks")
   }
 }
 findTabWidth(document.getElementsByClassName("tablinks").length)
+
+//function tabIcons()
+
+function horiText(skewVal, BoxID, BoxText){
+  var box = document.getElementById(BoxID);
+  var text = document.getElementById(BoxText);
+  //skew box and then unskew text by skewval
+  box.style.transform = "skewY(" + skewVal + "deg)";
+  text.style.transform = "skewY(-" +  skewVal + "deg)";
+  //convert skewval to radians
+  let skewRad = skewVal*Math.PI/180;
+  //set text size to 66% of screen 
+  text.style.maxWidth = screen.width*0.7;
+  console.log(text.style.maxWidth);
+  console.log(Math.tan(skewRad));
+  text.style.paddingTop = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
+  text.style.paddingTop = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
+  console.log(text.style);
+  //padding top and bottom = Math.tan(skewVal)*(max width of text)/2
+  
+
+}
+
+horiText(11, "diag-box-one", "dbo-content");
