@@ -13,18 +13,11 @@ document.getElementById("homeButton").click();
 
 function findTabWidth(number){
 let tabButtons = document.getElementsByClassName("tablinks")
-       //console.log(tabButtons);
-  if(window.matchMedia("(max-width:700px)")){
     for (let i=0; i < tabButtons.length; i++){
       tabButtons[i].style.width = (screen.width / number);
     } 
-       //document.getElementbyId
-    //console.log(tabButtons[1].style.width);
-  }
 }
 findTabWidth(document.getElementsByClassName("tablinks").length)
-
-console.log(document.getElementById("homeButton").innerText);
 
 function horiText(skewVal, BoxID, BoxText){
   var box = document.getElementById(BoxID);
@@ -32,7 +25,6 @@ function horiText(skewVal, BoxID, BoxText){
   //skew box and then unskew text by skewval
   box.style.transform = "skewY(" + skewVal + "deg)";
   skewVal < 0 ? text.style.transform = "skewY(" +  Math.abs(skewVal) + "deg)": text.style.transform = "skewY(-" +  skewVal + "deg)";
-  //console.log(text.style);
   //convert skewval to radians
   let skewRad = Math.abs(skewVal)*Math.PI/180;
   //set text size to 66% of screen 
@@ -41,9 +33,9 @@ function horiText(skewVal, BoxID, BoxText){
   text.style.paddingRight = screen.width*0.1;
   box.style.paddingTop = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
   box.style.paddingBottom = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
-  //console.log(box.style);
 }
 
+//addeventlistenerclick for quote
 
 horiText(8, "diag-box-one", "dbo-content");
 horiText(8, "diag-box-two", "dbo-content-two");
