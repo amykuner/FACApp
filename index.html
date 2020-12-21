@@ -1,51 +1,102 @@
-function  chooseTab(event, tabName){ 
-  var tabcontent = document.getElementsByClassName("tabcontent");
-  var tablinks = document.getElementsByClassName("tablinks");
-  for (var i = 0; i < tablinks.length; i++){
-    tablinks[i].classList.remove("active");
-    tabcontent[i].style.display = "none";
-  } 
-  document.getElementById(tabName).style.display = "block"; 
-  document.getElementById(tabName).classList.add("active");
-}
-    //setting the home tab as our first page
-document.getElementById("homeButton").click();
+<html>
+<head>
+<link rel="stylesheet" href="FACApp.css">
+<script src="https://kit.fontawesome.com/cf011bc379.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Franklin&display=swap" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="tab">
+    <button class="tablinks" onclick="chooseTab(event, 'Other Programmers')" id="OSButton">
+      <span class="icon"> <i class="fas fa-home"></i></span>
+      <span class="tabtext">Other Stuff</span>
+    </button>
+    <button class="tablinks" onclick="chooseTab(event, 'Why FAC')" id="WFACButton">
+      <span class="icon"> <i class="far fa-question-circle"></i></span>
+      <span class="tabtext"> Why FAC? </span>
+    </button>
+    <button class="tablinks" onclick="chooseTab(event, 'About Me')" id="aboutMeButton">
+      <span class="icon"> <i class="far fa-user-circle"></i></span>
+      <span class="tabtext">About Me</span>
+    </button>
+    <button class="tablinks" onclick="chooseTab(event, 'Home')" id="homeButton">
+      <span class="icon"> <i class="fas fa-home"></i></span>
+      <span class="tabtext">Home</span>
+    </button>
+  </div>
+  
+  <div id="Other Programmers" class="tabcontent">
+    <h1>Other Stuff</h1>
+    <p>Other stuff here, with links!</p>
+  </div>
+  
+  <div id="About Me" class="tabcontent">
+    <h1>About Me</h1>
+    <p>Write about me. </p>
+    <p>
+    <div class="flexbox-row">
+      <a href="https://www.freecodecamp.org/amykuner" target="_blank" title="FreeCodeCamp Profile">
+        <i class="fab fa-free-code-camp" style="font-size:500px; color: #9699f0"></i></a>
+    
+      <a href="https://www.codewars.com/users/amykuner" target="_blank" title="Codewars Profile">
+        <i class="fab fa-jedi-order" style="font-size:550px; color: #e005a4"></i> </a>
+    
+      <a href="https://github.com/amykuner" target="_blank" title="GitHub Profile">
+        <i class="fab fa-github" style="font-size:520px; color: #FE8171"></i></a>
+     </div>
+    </p>
+  </div>
 
-function horiText(skewVal, BoxID, BoxText){
-  var box = document.getElementById(BoxID);
-  var text = document.getElementById(BoxText);
-  //skew box and then unskew text by skewval
-  box.style.transform = "skewY(" + skewVal + "deg)";
-  skewVal < 0 ? text.style.transform = "skewY(" +  Math.abs(skewVal) + "deg)": text.style.transform = "skewY(-" +  skewVal + "deg)";
-  //convert skewval to radians
-  let skewRad = Math.abs(skewVal)*Math.PI/180;
-  //set text size to 66% of screen 
-  text.style.maxWidth = screen.width*0.6;
-  text.style.paddingLeft = screen.width*0.1;
-  text.style.paddingRight = screen.width*0.1;
-  box.style.paddingTop = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
-  box.style.paddingBottom = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
-}
+  <div id="Why FAC" class="tabcontent">
+    <h1>Why FAC?</h1>
+    <div class="wrapper">
+      <img class="grid-img-one"
+      src="https://cdn.mos.cms.futurecdn.net/zmo9JBr3EnsnDXmvYqCXqK-970-80.jpg.webp" alt="apple mac laptops with funky colours on the screens">  
+      
+      
+      <p class="text-one-home"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+      
+      <p class="text-two-home"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+      
+      
+      <p class="text-three-home"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+     
+      <p class="text-four-home"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p> 
+      </div>
+  </div>
+  
+  
+  <div id="Home" class="tabcontent">
+    <div class="hero-img">
+      <div class="hero-text">
+      <h1> Founders and Coders Application Site </h1>
+      <h2> Amy Kuner </h2>
+      </div>
+    </div>
+    <main>
+      <div id="diag-box-one">
+        <div id="dbo-content">
+          <p style="color: white;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+             <!-- <img class="left-img"
+  src="https://cdn.mos.cms.futurecdn.net/zmo9JBr3EnsnDXmvYqCXqK-970-80.jpg.webp" alt="apple mac laptops with funky colours on the screens">-->
+              <p style="color: white;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+        </div>
+      </div>
+      <div id="diag-box-two">
+        <div id="dbo-content-two">
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+        </div>
+      </div>
+      <div id="diag-box-three">
+        <div id="dbo-content-three">
+          <p style="color: white"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p> 
+        </div>
+      </div>
 
-horiText(8, "diag-box-one", "dbo-content");
-horiText(8, "diag-box-two", "dbo-content-two");
-horiText(8, "diag-box-three", "dbo-content-three");
-
-function findTabWidth(number){
-  var tabButtons = document.getElementsByClassName("tablinks");
-      for (let i=0; i < tabButtons.length; i++){
-        tabButtons[i].style.width = (window.innerWidth / number);
-      } 
-  }
-  findTabWidth(document.getElementsByClassName("tablinks").length);
-
-//function randoQuote(){
-//get random number, excluding numbers already on page
-//choose random spot
-//choose quote corresponding to number
-//make quote appear in that spot
-//
-//}
-
-
-//addeventlistenerclick for quote
+    </main>
+  </div>  
+</body>
+<!--<footer>
+  <div class="footer"><p> This is my footer! </p> </div>
+</footer>-->
+<script src="FACApp.js"></script>
+</html>
