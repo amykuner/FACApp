@@ -5,6 +5,7 @@
   border: none;
   background-color: #abe9fe;
   position: relative; 
+  
 }
 
 .tab button{
@@ -19,7 +20,7 @@
   font-size: 2vw;
   padding-bottom: 1vh;
   padding-top: 1vh;
-  width: auto;
+  
 }
   
 .tab button:hover {
@@ -75,6 +76,7 @@ p {color: #000000;
 
 main {
   text-align:center;
+  justify-content: center;
 }
 
 #diag-box-one {
@@ -130,13 +132,49 @@ main {
   justify-content: space-evenly;
 }
 
-/*
-.left-img{
-  max-width:97%;
-  margin: 2px;
-  height:auto;
+.wrapper{
+  display: grid;
+  grid-template-columns:repeat(6, 1fr);
+  gap: 50px;
+  grid-auto-rows: minimax(100px, auto);
+}
+
+.text-one-home{
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 7;
   padding: 10px;
-}*/
+}
+
+.text-two-home{
+  grid-row: 2;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  padding: 10px;
+}
+
+.text-three-home{
+  grid-row: 3;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding: 10px;
+}
+
+.text-four-home{
+  grid-row: 3;
+  grid-column-start: 4;
+  grid-column-end: 7;
+  padding: 10px;
+}
+
+.grid-img-one{
+  grid-row:2;
+  grid-column-start: 1;
+  grid-column-end: 4;
+  padding-left:20px;
+  max-width: 100%;
+  justify-content: center;
+}
 
 .footer{
   width: 100%;
@@ -148,7 +186,7 @@ main {
 
 .icon{
   display: none;
-  font-size: large;
+  font-size: 10vw;
 }
 
 .tabtext{
@@ -161,6 +199,6 @@ main {
 }
 
 @media all and (max-device-width: 700px){
-    .icon {display:inline-block;}
-    .tabtext {display:none;}
-  }
+  .icon {display:inline-block;}
+  .tabtext {display:none;}
+}
