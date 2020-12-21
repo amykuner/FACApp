@@ -83,6 +83,7 @@ main {
   background-image:linear-gradient(45deg,#e005a4, #8c0367);
   transform:skewY(10deg);
   text-align: center;
+  margin:o;
 }
 
 #diag-box-two {
@@ -98,13 +99,19 @@ main {
  
 #dbo-content {
   transform:skewY(-10deg);
-  text-align:center;
+  display: inline-block;
 }
 
 #dbo-content-two {
   transform:skewY(4deg);
-  text-align: center;
+  display: inline-block
 }
+
+#dbo-content-three {
+  transform:skewY(4deg);
+  display: inline-block
+}
+
 
 .hero-img {
   background-image: url("https://lh3.googleusercontent.com/lCeskLPiE1R-2SOdroVH1EywfxpHSJo9zApfv6ykSXOt7sQT3g97VrJkX49tkJkGVGAj7yznEMpjLg8Yu8o8I45B69IkXiT6ObZHjfY3VUZssKLhb1whrAm7acz3nFOtzRFyTYfQ47nGY_6LbvnwpxEfnPeAnVqy0wF5aSO9VLRV3nd5yekIkcLLFXaHt9g_CSVCXRZQAYkxs9aRQE_b77owIBaKX8W40mv3kP8Sq5DF_6eGLssPquBeKUqAUcxVKrfEs70MLn5q3fG84CIxUxJezFHiI-VBOYrfHT3Ls1aTNPTRAUmv5V6xX-wGw7igXHnhygs-d4AEc00KUMA031R1CGeCkVXNXB-rvo4bcsm-gDg3zTCIdLDOQLdKSoJRiKeu7mEtKsv3szMbArhDH4GQVo7-iJw-9HQtCqh5lNhhntUYL0nsMo_DNYrr9swSeoH8xlrDcoGYe1tXPt_iWlnwscROpkaku9IrOQpOaZCSyg7o6EB4T1EMfLvYmEM5Uod83Ch0tiQebYZSCJSn_r6K3U4I62v9rzeYLsfvl1DcRrEc-GplRq-UWgGG7sW_1XaM65qESXGR2bzRWvo9nv4MaKpqRteeJmGHlPeOjzqf4dIxi3_A6ND1Gv7Wlk22Vwj8mgfkmTJND0Ajox07o6lxt13tq5zM66eiRGG77unZjVQNGkOw4xEDbJo=w1920-h900-no?authuser=0");
