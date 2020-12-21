@@ -37,8 +37,8 @@ function findTabWidth(number){
         tabButtons[i].style.width = (window.innerWidth / number);
       } 
   }
-  findTabWidth(document.getElementsByClassName("tablinks").length);
-
+findTabWidth(document.getElementsByClassName("tablinks").length);
+screen.addEventListener("resize",findTabWidth);
 //function randoQuote(){
 //get random number, excluding numbers already on page
 //choose random spot
