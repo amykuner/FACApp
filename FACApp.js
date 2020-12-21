@@ -11,14 +11,6 @@ function  chooseTab(event, tabName){
     //setting the default tab as our first page
 document.getElementById("homeButton").click();
 
-function findTabWidth(number){
-let tabButtons = document.getElementsByClassName("tablinks")
-    for (let i=0; i < tabButtons.length; i++){
-      tabButtons[i].style.width = (screen.width / number);
-    } 
-}
-findTabWidth(document.getElementsByClassName("tablinks").length)
-
 function horiText(skewVal, BoxID, BoxText){
   var box = document.getElementById(BoxID);
   var text = document.getElementById(BoxText);
@@ -40,3 +32,11 @@ function horiText(skewVal, BoxID, BoxText){
 horiText(8, "diag-box-one", "dbo-content");
 horiText(8, "diag-box-two", "dbo-content-two");
 horiText(8, "diag-box-three", "dbo-content-three");
+
+function findTabWidth(number){
+  var tabButtons = document.getElementsByClassName("tablinks");
+      for (let i=0; i < tabButtons.length; i++){
+        tabButtons[i].style.width = (window.innerWidth / number);
+      } 
+  }
+  findTabWidth(document.getElementsByClassName("tablinks").length);
