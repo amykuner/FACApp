@@ -8,7 +8,7 @@ function  chooseTab(event, tabName){
   document.getElementById(tabName).style.display = "block"; 
   document.getElementById(tabName).classList.add("active");
 }
-    //setting the default tab as our first page
+    //setting the home tab as our first page
 document.getElementById("homeButton").click();
 
 function horiText(skewVal, BoxID, BoxText){
@@ -27,8 +27,6 @@ function horiText(skewVal, BoxID, BoxText){
   box.style.paddingBottom = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2;
 }
 
-//addeventlistenerclick for quote
-
 horiText(8, "diag-box-one", "dbo-content");
 horiText(8, "diag-box-two", "dbo-content-two");
 horiText(8, "diag-box-three", "dbo-content-three");
@@ -40,3 +38,14 @@ function findTabWidth(number){
       } 
   }
   findTabWidth(document.getElementsByClassName("tablinks").length);
+
+//function randoQuote(){
+//get random number, excluding numbers already on page
+//choose random spot
+//choose quote corresponding to number
+//make quote appear in that spot
+//
+//}
+
+
+//addeventlistenerclick for quote
