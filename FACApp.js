@@ -73,20 +73,18 @@ function carousel(current){
 }
 carousel(document.getElementById("carOne"));
 
-function nextPic(current){
-  //indexOf(display )
-  pics.indexOf(current) == pics.length - 1? carousel(pics[0]) : carousel(pics[pics.indexOf(current) + 1]);
-}
-nextPic(document.getElementById("carTwo"));
+function nextPic(){
+  for(let i = 0; i < pics.length; i++){
+    if(pics[i].style.display == "inline-block"){
+      console.log(i);
+  i == pics.length - 1 ? carousel(pics[0]) : carousel(pics[i + 1]);
+  return;
+}}}
 
-
-function prevPic(current){
-  pics.indexOf(current) == 0? carousel(pics[pics.length - 1]) : carousel(pics[pics.indexOf(current) - 1]);
-  
-}
-//prevPic(document.getElementById("carOne"));
-
-
-//addEventListener(click, )
-//add event button: click on forward means execute function carousel of current + 1
-//add event button: click on back means execute function carousel of current - 1
+function prevPic(){
+  for(let i = 0; i < pics.length; i++){
+    if(pics[i].style.display == "inline-block"){
+      console.log(i);
+  i == 0 ? carousel(pics[pics.length -1]) : carousel(pics[i - 1]);
+  return;
+}}}
