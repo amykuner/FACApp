@@ -47,30 +47,26 @@ body {
   background-color: #abe9fe;
   margin: 0;  
   position: relative;
-  padding-bottom: 4vh;
+  padding-bottom: 10vw;
   text-align: center;
+  /* add in mediaquery aout length of page to determine this! */
 }
    
 h1 {color: #000000;
  font-family: "Libre Franklin", sans-serif;
  text-align: center;
- font-size: 2.5vw;
+ font-size: 4vmax;
 }
 
 h2 {color: #000000;
  font-family: "Libre Franklin", sans-serif;
  text-align: center;
+ font-size: 3vmax;
 }
- 
-h3 {color: #000000;
- font-family: "Libre Franklin", sans-serif;
- text-align: center;
-}
-
   
 p {color: #000000;
  font-family: "Libre Franklin", sans-serif;
- font-size: 1.75vw;
+ font-size: 3vmin;
  text-align: center;
 }
 
@@ -95,6 +91,7 @@ main {
 #diag-box-three {
   background-image:linear-gradient(45deg,#e005a4, #e005a4);
   transform:skewY(-10deg);
+  
 }
  
 #dbo-content {
@@ -193,7 +190,14 @@ main {
   align-items: center;
   left: 0; right: 0; bottom: 0;
   height: 4vh;
-  margin-top: 2rem; 
+  margin: 0;
+}
+
+.footer-home{
+  width: 100%;
+  text-align: center;
+  position: absolute;
+ /* when the footer is on the home page it doesnt work because the diagonal box stretches the page down so it is longer.  */
 }
 
 .icon{
@@ -224,4 +228,38 @@ main {
   display: none; 
   position: relative;
   justify-content: center;
+  width: 100%;
+  max-width: 50vw;
+}
+
+#next{
+  background-color: black;
+  color: white;
+}
+
+#back{
+  background-color: black;
+  color: white;
+  vertical-align: middle;
+  /*display: inline-block;
+  /* position: absolute;
+  top: 50%;
+  left: 0%; */
+  float: left;
+}
+
+.carousel .button{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+
 }
