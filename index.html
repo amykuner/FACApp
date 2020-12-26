@@ -6,17 +6,17 @@
 </head>
 <body>
   <div class="tab">
-    <button class="tablinks" onclick="chooseTab(event, 'Other Stuff')" id="OSButton">
-      <span class="icon"> <i class="fas fa-home"></i></span>
-      <span class="tabtext">Other Stuff</span>
+    <button class="tablinks" onclick="chooseTab(event, 'About Me')" id="OSButton">
+      <span class="icon"> <i class="far fa-user-circle"></i></span>
+      <span class="tabtext"> About Me </span>
     </button>
     <button class="tablinks" onclick="chooseTab(event, 'Why FAC')" id="WFACButton">
       <span class="icon"> <i class="far fa-question-circle"></i></span>
       <span class="tabtext"> Why FAC? </span>
     </button>
-    <button class="tablinks" onclick="chooseTab(event, 'About Me')" id="aboutMeButton">
-      <span class="icon"> <i class="far fa-user-circle"></i></span>
-      <span class="tabtext">About Me</span>
+    <button class="tablinks" onclick="chooseTab(event, 'Links')" id="aboutMeButton">
+      <span class="icon"> <i class="fas fa-link"></i></span>
+      <span class="tabtext">Links</span>
     </button>
     <button class="tablinks" onclick="chooseTab(event, 'Home')" id="homeButton">
       <span class="icon"> <i class="fas fa-home"></i></span>
@@ -24,20 +24,20 @@
     </button>
   </div>
   
-  <div id="Other Stuff" class="tabcontent">
-    <h1>Other Stuff</h1>
+  <div id="About Me" class="tabcontent">
+    <h2>About Me</h2>
     <p>
       <img class="carousel" id="carOne" src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="snazzy cat"></img>
       <img class="carousel" id="carTwo" src="https://assets.classicfm.com/2019/11/superman-violin-1553266007-view-0.jpg" alt="sleepy violin man"></img>
     </p>
+    <button onclick="prevPic()"><</button>
+    <button onclick="nextPic()">></button>
   </div>
 
-  <!-- <button class="next" onclick="nextPic()"></button>
-  <button class="back" onclick="carousel()"></button> -->
 
-  <div id="About Me" class="tabcontent">
-    <h1>About Me</h1>
-    <p>Write about me. </p>
+  <div id="Links" class="tabcontent">
+    <h2>Links</h2>
+    <p>Links to my profiles for FreeCodeCamp, CodeWars, and GitHub. </p>
     <p>
     <div class="flexbox-row">
       <a href="https://www.freecodecamp.org/amykuner" target="_blank" title="FreeCodeCamp Profile">
@@ -53,7 +53,7 @@
   </div>
 
   <div id="Why FAC" class="tabcontent">
-    <h1>Why FAC?</h1>
+    <h2>Why FAC?</h2>
     <div class="wrapper">
       <img class="grid-img-one"
       src="https://cdn.mos.cms.futurecdn.net/zmo9JBr3EnsnDXmvYqCXqK-970-80.jpg.webp" alt="apple mac laptops with funky colours on the screens">  
