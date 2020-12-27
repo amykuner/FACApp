@@ -47,8 +47,9 @@ body {
   background-color: #abe9fe;
   margin: 0;  
   position: relative;
-  padding-bottom: 10vw;
+  padding-bottom: 0; /*10vw; */
   text-align: center;
+  min-height: 100%;
   /* add in mediaquery aout length of page to determine this! */
 }
    
@@ -190,14 +191,7 @@ main {
   align-items: center;
   left: 0; right: 0; bottom: 0;
   height: 4vh;
-  margin: 0;
-}
-
-.footer-home{
-  width: 100%;
-  text-align: center;
-  position: absolute;
- /* when the footer is on the home page it doesnt work because the diagonal box stretches the page down so it is longer.  */
+  margin-bottom: 0;
 }
 
 .icon{
@@ -225,41 +219,24 @@ main {
 }
 
 .carousel{
-  display: none; 
-  position: relative;
+  position: absolute;
   justify-content: center;
   width: 100%;
   max-width: 50vw;
+  z-index: -1;
+  left: 25%;
+}
+#back{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 0;
 }
 
 #next{
   background-color: black;
   color: white;
-}
-
-#back{
-  background-color: black;
-  color: white;
-  vertical-align: middle;
-  /*display: inline-block;
-  /* position: absolute;
-  top: 50%;
-  left: 0%; */
-  float: left;
-}
-
-.carousel .button{
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  background-color: #555;
-  color: white;
-  font-size: 16px;
-  padding: 12px 24px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-
+  right: 0;
 }
