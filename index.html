@@ -6,19 +6,19 @@
 </head>
 <body>
   <div class="tab">
-    <button class="tablinks" onclick="chooseTab(event, 'About Me')" id="OSButton">
+    <button class="tablinks" onclick="chooseTab(event, 'About Me'); footerflat('About Me')" id="OSButton">
       <span class="icon"> <i class="far fa-user-circle"></i></span>
       <span class="tabtext"> About Me </span>
     </button>
-    <button class="tablinks" onclick="chooseTab(event, 'Why FAC')" id="WFACButton">
+    <button class="tablinks" onclick="chooseTab(event, 'Why FAC'); footerflat('Why FAC')" id="WFACButton">
       <span class="icon"> <i class="far fa-question-circle"></i></span>
       <span class="tabtext"> Why FAC? </span>
     </button>
-    <button class="tablinks" onclick="chooseTab(event, 'Links')" id="aboutMeButton">
+    <button class="tablinks" onclick="chooseTab(event, 'Links'); footerflat('Links')" id="aboutMeButton">
       <span class="icon"> <i class="fas fa-link"></i></span>
       <span class="tabtext">Links</span>
     </button>
-    <button class="tablinks" onclick="chooseTab(event, 'Home')" id="homeButton">
+    <button class="tablinks" onclick="chooseTab(event, 'Home'); footerflat('Home')" id="homeButton">
       <span class="icon"> <i class="fas fa-home"></i></span>
       <span class="tabtext">Home</span>
     </button>
@@ -26,12 +26,12 @@
   
   <div id="About Me" class="tabcontent">
     <h2>About Me</h2>
-    <p>
+    <div>
       <img class="carousel" id="carOne" src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="snazzy cat"></img>
       <img class="carousel" id="carTwo" src="https://assets.classicfm.com/2019/11/superman-violin-1553266007-view-0.jpg" alt="sleepy violin man"></img>
-    </p>
-    <button onclick="prevPic()"><</button>
-    <button onclick="nextPic()">></button>
+      <button class="back" onclick="prevPic()"><</button>
+      <button class="next" onclick="nextPic()">></button>
+    </div>
   </div>
 
 
