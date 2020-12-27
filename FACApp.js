@@ -88,3 +88,15 @@ function prevPic(){
   i == 0 ? carousel(pics[pics.length -1]) : carousel(pics[i - 1]);
   return;
 }}}
+
+function footerflat(tabName){
+  document.getElementById(tabName).scrollHeight + (window.innerHeight * 0.06) + (window.innerWidth* 0.04) <= window.innerHeight? document.body.style.paddingBottom = 0: document.body.style.paddingBottom = "8.5vw";
+  console.log(document.getElementById(tabName));
+  console.log(document.body);
+    //if the length of the tab (without footer) is less than the phone height:
+  //set focument.getElementById().body.paddingBottom = 0;
+
+  //change this so that on click, we check our condition and change the body length.
+} //+4vh for ffooter
+
+//footerflat("About Me");
