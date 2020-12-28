@@ -125,6 +125,38 @@ main {
   margin-bottom: 10vh;
 }
 
+.hero-img2 {
+  background-image: url("https://lh3.googleusercontent.com/fnH0NHaQDyQPWMycjlJHlvLop5hsFbTYBfRRugVZUXChTkmvZQ4TLivXo8oEIbVTnQla1HiBGN_lHwSqaYeI3UTbSD-FHAxJ4sOyAIOJf5kW3cH7ZFuh0L8UGl0gvppggrUyXQA9iOlQuQ6f0djTu4urZiRdc6mZIGMh8f1JNBVowNLBl0kqhTY9eQ0zS2Fuj41Y3IBPV0hhqymF6fyGxhFAjspRxq-Tdpww3N2ESwLwu5ZVDESGgA5GnibBLfenS10_o7MFwWgtv3mFCzud2_Av9XRhpLXYz3MQxKHdpwmIpmco2KmGqWU5yYTHN9gjlCUO0aC-tFTnd_Pqa-2wIr610JkdXmt9oZENJHIAcR5kAJ6EYi7yNEf9FGoNviH24_ay5qwJBqBy-hTohUKoPs2F3IcY6DEAwPswob5IZvcH0D0eooNe2kgYn6F-kszVYXeRcnOwLvthQkgoi-YPaamtoOTqnjza7eEXzV_fcUaTT5Mnp14cqkb98zKnbsBn9Eu8xB8lsenZ4XxBFBALwg-13j13sQ3v9M959A05KqPtjHkiSEmZqcsgyzeWoyKtzNyU4iF9bZdi7uRZVgk93vlU8PNf9qCEogzOlLkItNOiKvtx4LNMJZTUaSvjsGFLMclkvfhskDzIcnGhr-SiATWgNT-n_AHWWBYoOJYUOd4fiOXI4jtiDn_RERE=w1583-h890-no?authuser=0");
+  height: 80vh;
+  max-width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+  z-index: 10;
+  overflow: visible;
+}
+
+/* .hero-img-dots{
+  background-image: url("https://lh3.googleusercontent.com/uV4idzUAy3xcSQVy45Sx8schzR7k9XBeUmUGa03-BVkmTcqp3MkKibrN3jd_zQ_LuxNANU0HCqlKkWA2NMu3ewJPfk1_3XvLwIu_bDQWLmMQFI1uejd_8LzGiKIJwNBmpezixuUDNGzoMlmFPj9WfLU7iXsT6Jww4PJO7K3qBgLxzUh8EHS5ByzJ2Ziq2coZBurq5NvszMDuncmglyl3SP6jhUKhc96tsFOARODJWNB0-soHDo4KUchSXJpzR-DY-6U3d0Mkv2TXLmt5lWGJNa28e7WofbgNG7KgMz3iiCuK0k3a5O0T7STTkm96-8LHM_5X8JWOurPCl4zf8bhZpb0BzmoTjTELyvyRcPVBhkmZLnqqqKemc8i_ygTVlhqVZcs8xms1IgHkGnwndgdH6irvSBucapOLFU0NF9s31SrPRiIui7Vz0z1gRlGcgqwPeZUK0hVysLVT7mqfJWBsCJ8qsZTCXatnkpmSE15KzGYU_Q6GAcwAk1guvu8F9F8eHhZsIwd4Cvk88S4E3Iz-GcEPKvicB6jEx2yIJp0JdZanwl5wcpyj4k6Yh7IS9HtuKZhDI51q9oUVoNHWAs3rIIhLAbqX1ZexnHA_Oir1TkJhSCaGQ-xAL0CGucdTTymkYefqrGfg_TYx0FxTGWcmF_KlWueuXXVtCfY3_KLBWSa9XeK1oNayL99OOW4=w1684-h947-no?authuser=0");
+  height: 80vh;
+  max-width:100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10vh;
+  z-index: 10;
+  overflow: visible;
+} */
+
 .hero-text {
   font-size: 4vw;
   text-align: center;
@@ -140,7 +172,7 @@ main {
 
 .wrapper{
   display: grid;
-  grid-template-columns:repeat(6, 1fr);
+  grid-template-columns:repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minimax(100px, auto);
   padding: 10px;
@@ -150,18 +182,24 @@ main {
   color: white;
 }
 
-
+.wrapper div{
+  z-index: 3;
+  background-position: center;
+  background-image: url("https://lh3.googleusercontent.com/drA11GPJgnHEt5CNtdr7h9ZPb4n9LBgFo-gNVaf-PtkPcIsGZIB8JEY5OsCMJz5iZ4uFnczw0hYcr8Rv7g9R56bRrTj1XUUWPj3zIKNt3pb3WVFSejSxHDYB2dQagNdeuN9SBhy5YEIIyOs34r8ekP4sHi__hrYr5hBICtLrZYF9EzVzOACEk1IZoVed3gEdg6bHNosGnXsldP9DNFYlB69ZI3WEl8DVBlHQLapP07v6AGqTEp57g550NXFOYvvujyY-9vssYTZhPI4-iNRdyedcN6XafwoXdqhXFQCu21oG22Ab51r_eMKxbiID4QITw24DkeKjUn4Q_d5XrUisprBGOVugKeTNPu_yCdJKS7Lw7xjOkf1BPTB2yYgVxaRxbppVd76fJpDZ-QN4xPNP92BJCC2AkPnydzZMfuL50IiWxu5Ebi5j9zpYqUgPvtXw0u8JmnNmNiXvlb1fpcEzUibj5GbdUdmfqo-_Y9cLxPRGSnuq96-OJw2gQm0TokqypijaTGGkfjUs9BBDWvNQ3CIf1cH7HZEaF2UTCAo7l_ZddhESNgblpcIWO-yKZIYbyVhGcHNjoyDgNJE9UT8HcIYFr0A4dghHmUcYDSjsPV0Kwu-J96k2Nbag4qxrrsZthGnThqv3fG0tzZM6G98Rm4YZ5EmzQYeEtmPNllGOgMa9kayyu5ppttkhkvA=w1684-h947-no?authuser=0");
+  object-fit: contain;
+} 
 .text-one-home{
   grid-row: 1;
   grid-column-start: 1;
-  grid-column-end: 5;
-  background-color: #F35F04;
+  grid-column-end: 2;
+  /* background-color: #F35F04; */
 }
 
 .text-two-home{
-  grid-row: 1;
-  grid-column-start: 5;
-  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 2;
+  grid-column-end: 4;
   background-color: #274DD3;
 }
 
@@ -256,12 +294,6 @@ main {
   /* border: 7vw solid #e005a4; */
 } 
 
-/* .carousel-container:before{
-  border: 14vw solid #fe8372;
-  position: absolute;
-  display: inline-block;
-} */
-
 .carousel{
   position: relative;
   width: 50vw;
@@ -269,6 +301,7 @@ main {
   max-height: 60vh;
   object-fit: cover;
   z-index: -1;
+  border: 10px solid #e005a4;
 }
 
 .carousel-container button{
@@ -289,9 +322,9 @@ main {
 }
 
 #back{
-  left: 0;
+  left: 10px;
 }
 
 #next{
-  right: 0;
+  right: -10px;
 }
