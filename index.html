@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="tab">
-    <button class="tablinks" onclick="chooseTab(event, 'Links'); footerflat('Links')" id="aboutMeButton">
+        <button class="tablinks" onclick="chooseTab(event, 'Links'); footerflat('Links')" id="aboutMeButton">
       <span class="icon"> <i class="fas fa-link"></i></span>
       <span class="tabtext">Links</span>
     <button class="tablinks" onclick="chooseTab(event, 'About Me'); footerflat('About Me')" id="OSButton">
@@ -27,11 +27,13 @@
   
   <div id="About Me" class="tabcontent">
     <h2>About Me</h2>
+    <div class="hero-img2">
     <div class="carousel-container">
       <button id="back" onclick="prevPic()"><i class="fas fa-arrow-left"></i></button>
       <button id="next" onclick="nextPic()"><i class="fas fa-arrow-right"></i></button>
       <img class="carousel" id="carOne" src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="snazzy cat"></img>
       <img class="carousel" id="carTwo" src="https://assets.classicfm.com/2019/11/superman-violin-1553266007-view-0.jpg" alt="sleepy violin man"></img>
+    </div>
     </div>
   </div>
 
@@ -40,6 +42,7 @@
     <h2>Links</h2>
     <p>Links to my profiles for FreeCodeCamp, CodeWars, and GitHub. </p>
     <p>
+    
     <div class="flexbox-row">
       <a href="https://www.freecodecamp.org/amykuner" target="_blank" title="FreeCodeCamp Profile">
         <i class="fab fa-free-code-camp" style="font-size:480px; color: #9699f0"></i></a>
