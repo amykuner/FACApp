@@ -187,6 +187,11 @@ main {
   display: none;
 }
 
+.wrapper div:hover{
+  transform: translateY(-0.5rem);
+  box-shadow: 0 1rem 1rem;
+}
+
 .expl{
   color: white;
   display: none;
