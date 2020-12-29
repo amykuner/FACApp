@@ -29,10 +29,6 @@
   background-color: #e005a4;
 }
   
-/* .tab button.active{
-  background-color: #abe9fe;
-} */
-  
 .tabcontent {
    display: none;
    border: none;  
@@ -55,10 +51,9 @@ body {
   background-color: #abe9fe;
   margin: 0;  
   position: relative;
-  padding-bottom: 0; /*10vw; */
+  padding-bottom: 0;
   text-align: center;
   min-height: 100%;
-  /* add in mediaquery aout length of page to determine this! */
 }
    
 h1 {color: #000000;
@@ -148,22 +143,6 @@ main {
   overflow: visible;
 } */
 
-/* .hero-img-dots{
-  background-image: url("https://lh3.googleusercontent.com/uV4idzUAy3xcSQVy45Sx8schzR7k9XBeUmUGa03-BVkmTcqp3MkKibrN3jd_zQ_LuxNANU0HCqlKkWA2NMu3ewJPfk1_3XvLwIu_bDQWLmMQFI1uejd_8LzGiKIJwNBmpezixuUDNGzoMlmFPj9WfLU7iXsT6Jww4PJO7K3qBgLxzUh8EHS5ByzJ2Ziq2coZBurq5NvszMDuncmglyl3SP6jhUKhc96tsFOARODJWNB0-soHDo4KUchSXJpzR-DY-6U3d0Mkv2TXLmt5lWGJNa28e7WofbgNG7KgMz3iiCuK0k3a5O0T7STTkm96-8LHM_5X8JWOurPCl4zf8bhZpb0BzmoTjTELyvyRcPVBhkmZLnqqqKemc8i_ygTVlhqVZcs8xms1IgHkGnwndgdH6irvSBucapOLFU0NF9s31SrPRiIui7Vz0z1gRlGcgqwPeZUK0hVysLVT7mqfJWBsCJ8qsZTCXatnkpmSE15KzGYU_Q6GAcwAk1guvu8F9F8eHhZsIwd4Cvk88S4E3Iz-GcEPKvicB6jEx2yIJp0JdZanwl5wcpyj4k6Yh7IS9HtuKZhDI51q9oUVoNHWAs3rIIhLAbqX1ZexnHA_Oir1TkJhSCaGQ-xAL0CGucdTTymkYefqrGfg_TYx0FxTGWcmF_KlWueuXXVtCfY3_KLBWSa9XeK1oNayL99OOW4=w1684-h947-no?authuser=0");
-  height: 80vh;
-  max-width:100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10vh;
-  z-index: 10;
-  overflow: visible;
-} */
-
 .hero-text {
   font-size: 4vw;
   text-align: center;
@@ -232,8 +211,8 @@ main {
 }
 
 .text-three-home{
-  grid-row-start: 2;
-  grid-row-end: 4;
+  grid-row-start: 1;
+  grid-row-end: 3;
   grid-column-start: 5;
   grid-column-end: 7;
 }
@@ -248,8 +227,8 @@ main {
 .text-five-home{
   grid-row-start: 1;
   grid-row-end: 3;
-  grid-column-start: 12;
-  grid-column-end: 14;
+  grid-column-start: 11;
+  grid-column-end: 12;
 }
 
 .text-six-home{
@@ -290,15 +269,6 @@ main {
   align-items: center;
   margin: 45% 0 45% 0;
 }
-
-/* .grid-img-one{
-  grid-row:2;
-  grid-column-start: 1;
-  grid-column-end: 4;
-  padding-left:20px;
-  max-width: 100%;
-  justify-content: center;
-} */
 
 .footer{
   width: 100%;
@@ -341,6 +311,19 @@ main {
   object-fit: cover;
   z-index: -1;
   border: 10px solid #e005a4;
+  animation: fadeEffect 0.5s;
+}
+
+.carouseltext{
+  position: relative;
+  opacity: 0.8;
+  color:aliceblue;
+  background-color: black;
+}
+  
+@keyframes fadeEffect{
+  from {opacity:0;}
+  to {opacity: 1;}
 }
 
 .carousel-container button{
