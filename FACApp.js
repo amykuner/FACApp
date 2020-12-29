@@ -37,38 +37,21 @@ horiText(8, "diag-box-one", "dbo-content");
 horiText(8, "diag-box-two", "dbo-content-two");
 horiText(8, "diag-box-three", "dbo-content-three");
 
-//function to find the width of the buttons so they fill the whole top of browser
-function findTabWidth(number){
-  var tabButtons = document.getElementsByClassName("tablinks");
-  //making the width for each tab the size I want
-      for (let i=0; i < tabButtons.length; i++){
-        tabButtons[i].style.width = (window.innerWidth / number);
-      } 
-  }
-//applying findTabWIdth to all of my tabs and then setting it to execute when the window is resized
-findTabWidth(document.getElementsByClassName("tablinks").length);
-window.addEventListener("resize",findTabWidth);
-
-//function randoQuote(){
-//do queryselectorAll
-//for (let i = 0; i < quotes.length; i+){
-
-//}
-//get random number, excluding numbers already on page
-//choose random spot
-//choose quote corresponding to number
-//make quote appear in that spot
-//
-//}
-
-//addeventlistenerclick for quote
+//define the elements of the image carousel for the functions below
 var pics = Array.from(document.getElementsByClassName("carousel"));
+var cartext = Array.from(document.getElementsByClassName("carouseltext"));
 
 function carousel(current){
-  console.log(pics);
   for(let i = 0; i < pics.length; i++){
-    pics[i].style.display = "none";
-    current.style.display = "inline-block";
+    pics[i].style.display = "none"; //hides all carousel photos
+    cartext[i].style.display = "none"; //hides all carousel text
+    current.style.display = "inline-block"; //selects the current photo
+    //if small enough screen, display = inline block for current text
+    if (window.matchMedia('(max-width: 700px)')){
+      current.nextElementSibling.style.display = "inline-block";
+      current.nextElementSibling.style.color = "black";
+      current.nextElementSibling.style.backgroundColor = "none";
+    }
   }
 }
 carousel(document.getElementById("carOne"));
@@ -76,7 +59,6 @@ carousel(document.getElementById("carOne"));
 function nextPic(){
   for(let i = 0; i < pics.length; i++){
     if(pics[i].style.display == "inline-block"){
-      console.log(i);
   i == pics.length - 1 ? carousel(pics[0]) : carousel(pics[i + 1]);
   return;
 }}}
@@ -84,19 +66,15 @@ function nextPic(){
 function prevPic(){
   for(let i = 0; i < pics.length; i++){
     if(pics[i].style.display == "inline-block"){
-      console.log(i);
   i == 0 ? carousel(pics[pics.length -1]) : carousel(pics[i - 1]);
   return;
 }}}
 
 function footerflat(tabName){
   document.getElementById(tabName).scrollHeight + (window.innerHeight * 0.06) + (window.innerWidth* 0.04) <= window.innerHeight? document.body.style.paddingBottom = 0: document.body.style.paddingBottom = "8.5vw";
-  console.log(document.getElementById(tabName));
-  console.log(document.body);
-    //if the length of the tab (without footer) is less than the phone height:
-  //set focument.getElementById().body.paddingBottom = 0;
+} 
 
-  //change this so that on click, we check our condition and change the body length.
-} //+4vh for ffooter
-
-//footerflat("About Me");
+//function flip(section){
+  //.words.style.display = "none";
+  //.expl.style.display = "inline-block";
+//}
