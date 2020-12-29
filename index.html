@@ -7,7 +7,7 @@
 </head>
 <body>
   <div class="tab">
-        <button class="tablinks" onclick="chooseTab(event, 'Links'); footerflat('Links')" id="aboutMeButton">
+    <button class="tablinks" onclick="chooseTab(event, 'Links'); footerflat('Links')" id="aboutMeButton">
       <span class="icon"> <i class="fas fa-link"></i></span>
       <span class="tabtext">Links</span>
     <button class="tablinks" onclick="chooseTab(event, 'About-Me'); footerflat('About-Me')" id="OSButton">
@@ -30,8 +30,16 @@
     <div class="carousel-container">
       <button id="back" onclick="prevPic()"><i class="fas fa-arrow-left"></i></button>
       <button id="next" onclick="nextPic()"><i class="fas fa-arrow-right"></i></button>
-      <img class="carousel" id="carOne" src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="snazzy cat"></img>
-      <img class="carousel" id="carTwo" src="https://assets.classicfm.com/2019/11/superman-violin-1553266007-view-0.jpg" alt="sleepy violin man"></img>
+      <img class="carousel" id="carOne" src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="snazzy cat">
+        <div class="carouseltext">
+          This is the text for the first lot of carousel text.
+        </div>
+      </img>
+      <img class="carousel" id="carTwo" src="https://assets.classicfm.com/2019/11/superman-violin-1553266007-view-0.jpg" alt="sleepy violin man">
+        <div class="carouseltext">
+          This is the text for the SECOND lot of carousel text.
+        </div>
+      </img>
     </div>
   </div>
 
@@ -57,10 +65,7 @@
   <div id="Why FAC" class="tabcontent">
     <h2>Why FAC?</h2>
     <div class="wrapper">
-      <!-- <img class="grid-img-one"
-      src="https://cdn.mos.cms.futurecdn.net/zmo9JBr3EnsnDXmvYqCXqK-970-80.jpg.webp" alt="apple mac laptops with funky colours on the screens">  
-       -->
-      
+
       <div class="text-one-home"> 
         <p class="word"> Word.  </p>
         <p class="expl">this is where i explain each word i use.</p>
@@ -107,9 +112,7 @@
       <div id="diag-box-one">
         <div id="dbo-content">
           <p style="color: white;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
-             <!-- <img class="left-img"
-  src="https://cdn.mos.cms.futurecdn.net/zmo9JBr3EnsnDXmvYqCXqK-970-80.jpg.webp" alt="apple mac laptops with funky colours on the screens">-->
-              <p style="color: white;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
+          <p style="color: white;"> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.  </p>
         </div>
       </div>
       <div id="diag-box-two">
