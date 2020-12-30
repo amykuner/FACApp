@@ -14,7 +14,7 @@ function  chooseTab(event, tabName){
     //setting the home tab as our first page
 document.getElementById("homeButton").click();
 
-//function to change the diagonal background sections but keep text horizontal
+//function to change the diagonal background sections but keep text horizontal - purely to experiment while deciding on style
 function horiText(skewVal, BoxID, BoxText){
   var box = document.getElementById(BoxID);
   var text = document.getElementById(BoxText);
@@ -46,12 +46,7 @@ function carousel(current){
     pics[i].style.display = "none"; //hides all carousel photos
     cartext[i].style.display = "none"; //hides all carousel text
     current.style.display = "inline-block"; //selects the current photo
-    //if small enough screen, display = inline block for current text
-    if (window.matchMedia('(max-width: 700px)')){
-      current.nextElementSibling.style.display = "inline-block";
-      current.nextElementSibling.style.color = "black";
-      current.nextElementSibling.style.backgroundColor = "none";
-    }
+    cartext[pics.indexOf(current)].style.display = "inline-block"; //selects the corresponding text block
   }
 }
 carousel(document.getElementById("carOne"));
@@ -65,7 +60,7 @@ function nextPic(){
 
 function prevPic(){
   for(let i = 0; i < pics.length; i++){
-    if(pics[i].style.display == "inline-block"){
+    if(pics[i].style.display == "inline-block"){-
   i == 0 ? carousel(pics[pics.length -1]) : carousel(pics[i - 1]);
   return;
 }}}
