@@ -22,7 +22,7 @@
 <meta name="msapplication-TileImage" content="file:///C:/Users/User/Downloads/FACAPP/ms-icon-144x144.png">
 <meta name="theme-color" content="#ffffff">
 </head>
-<body onresize="footerflat()">
+<body>
   <div class="tab">
     <button class="tablinks" onclick="chooseTab(event, 'Home'); footerflat('Home')" id="homeButton">
       <span class="icon"> <i class="fas fa-home"></i></span>
@@ -45,9 +45,12 @@
   <div id="Home" class="tabcontent">
     <div class="hero-img">
       <div class="hero-text">
-      <h1> Founders and Coders Application Site </h1>
-      <h2> Amy Kuner </h2>
+        <h1> Founders and Coders Application Site </h1>
+        <h2> Amy Kuner </h2>
       </div>
+    </div>
+    <div class="scroll-down">
+      <i class="fas fa-chevron-down" href="#"></i>
     </div>
     <main>
       <div id="diag-box-one">
@@ -113,15 +116,15 @@
       <button id="back" onclick="prevPic()"><i class="fas fa-arrow-left"></i></button>
       <button id="next" onclick="nextPic()"><i class="fas fa-arrow-right"></i></button>
       <img class="carousel" id="carOne" src="https://cdn.theatlantic.com/static/mt/assets/science/cat_caviar.jpg" alt="snazzy cat">
-        <div class="carouseltext">
-          This is the text for the first lot of carousel text.
-        </div>
       </img>
       <img class="carousel" id="carTwo" src="https://assets.classicfm.com/2019/11/superman-violin-1553266007-view-0.jpg" alt="sleepy violin man">
-        <div class="carouseltext">
-          This is the text for the SECOND lot of carousel text.
-        </div>
       </img>
+      <div class="carouseltext">
+        This is the text for the first lot of carousel text.
+      </div>
+      <div class="carouseltext">
+        This is the text for the SECOND lot of carousel text.
+      </div>
     </div>
   </div>
 
@@ -145,7 +148,7 @@
 
 </body>
 <footer class="footer">
-  <p> <span>&#169;</span> Amy Kuner 2020</p>
+  <span>&#169;</span> Amy Kuner 2020
 </footer>
 <script src="FACApp.js"></script>
 </html>
