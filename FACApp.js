@@ -65,9 +65,13 @@ function prevPic(){
   return;
 }}}
 
-function footerflat(tabName){
+function footerFlat(tabName){
   document.getElementById(tabName).scrollHeight + (window.innerHeight * 0.06) + (window.innerWidth* 0.04) <= window.innerHeight? document.body.style.paddingBottom = 0: document.body.style.paddingBottom = "8.5vw";
 } 
+
+function darkMode(){
+  
+}
 
 //function flip(section){
   //.words.style.display = "none";
