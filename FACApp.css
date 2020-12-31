@@ -71,7 +71,7 @@ h2 {color: #000000;
 }
   
 p {color: #000000;
- font-size: 1.5rem;
+ font-size: 1.2rem;
  text-align: center;
 }
 
@@ -112,7 +112,7 @@ main {
 
 .hero-img {
   background-image: url("https://lh3.googleusercontent.com/lCeskLPiE1R-2SOdroVH1EywfxpHSJo9zApfv6ykSXOt7sQT3g97VrJkX49tkJkGVGAj7yznEMpjLg8Yu8o8I45B69IkXiT6ObZHjfY3VUZssKLhb1whrAm7acz3nFOtzRFyTYfQ47nGY_6LbvnwpxEfnPeAnVqy0wF5aSO9VLRV3nd5yekIkcLLFXaHt9g_CSVCXRZQAYkxs9aRQE_b77owIBaKX8W40mv3kP8Sq5DF_6eGLssPquBeKUqAUcxVKrfEs70MLn5q3fG84CIxUxJezFHiI-VBOYrfHT3Ls1aTNPTRAUmv5V6xX-wGw7igXHnhygs-d4AEc00KUMA031R1CGeCkVXNXB-rvo4bcsm-gDg3zTCIdLDOQLdKSoJRiKeu7mEtKsv3szMbArhDH4GQVo7-iJw-9HQtCqh5lNhhntUYL0nsMo_DNYrr9swSeoH8xlrDcoGYe1tXPt_iWlnwscROpkaku9IrOQpOaZCSyg7o6EB4T1EMfLvYmEM5Uod83Ch0tiQebYZSCJSn_r6K3U4I62v9rzeYLsfvl1DcRrEc-GplRq-UWgGG7sW_1XaM65qESXGR2bzRWvo9nv4MaKpqRteeJmGHlPeOjzqf4dIxi3_A6ND1Gv7Wlk22Vwj8mgfkmTJND0Ajox07o6lxt13tq5zM66eiRGG77unZjVQNGkOw4xEDbJo=w1920-h900-no?authuser=0");
-  height: 100vh;
+  height: 80vh;
   max-width:100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -161,26 +161,20 @@ main {
 
 .wrapper div{
   z-index: 3;
+  display:flex;
+  align-items: center;
+  justify-content: center;
   background-position: center;
   background-image: url("https://lh3.googleusercontent.com/BYmkmD_ifbWTZhUz_uj59ix1MuFqhYHyH_2L1EymTQaF6rHtxnLQwIQ7z91KZiV9Wey3xSTn0kvCfEtHL_2Zln-4ERzkR1lc9ko18ugqe4SrSNwu71iVon1sKO-WAjFOW9WeG2Tx9glN25BATJMEC-czyebhpy9qal1IyhDO4fK_t9Txb-FGpoOsyf8BXZ9JLx8zIHzYjqtq4Trn546TK5-z9x5MBHxAHRtZGzUOxtIWLiJAwlBLVGOyoJzezv4O_J_XzEDqOQ_Cdk3mzGUAHXU5B-ugc-rGBeydnlz0zKA5Feta9BjaCWQuXnfLksVA8w211b7NZfvSXxr_2KldvAvwtFTxMOYw-JNbYeHWuQLIC86IgzFB0fDxcnFIWmE9JGwL8VGDNeV4ciAnw_RSduyWf2nwHvUT2wcDryycIbe91I-2ACugJ0_-D4cRd2PhcZ59N85Lf6rRcnAjUpwDJRvjzgy07Gr1BvMG2PaUO868Jh4SNP47zZ62WOUoL5L6qByO3JR-4ZJODoF-tmhgMt_yVEEGpIYsvNfEQMrMWS7_qI9kYHSr2_U5GH6cVqYCHDnz3jEzKDNUcyPiMPdsCL1eZ30TpKgkWdW_2Nmls2siAkm-HzvK-TEpTakf7KzK_uZzmOD4mi7JAtkEf9-Pv4kz_9eZjndbD3k7SbNpf7_J1G8A9qWWwHE9IcQ=s916-no?authuser=0");
   background-repeat: no-repeat;
   background-size: 100%;
 } 
 
-/* .wrapper div::before{
-  content:"";
-  padding-bottom: 100%;
-  display: block;
-  position: absolute;
-  translate: (0, 0);
-} */
-
 .text-one-home{
   grid-row-start: 2;
   grid-row-end: 4;
   grid-column-start: 2;
   grid-column-end: 4;
-  /* background-color: #F35F04; */
 }
 
 .text-two-home{
@@ -208,7 +202,7 @@ main {
   grid-row-start: 1;
   grid-row-end: 3;
   grid-column-start: 11;
-  grid-column-end: 12;
+  grid-column-end: 13;
 }
 
 .text-six-home{
@@ -220,7 +214,6 @@ main {
 
 .wrapper div:hover .expl{
   display: inline-block;
-  vertical-align: middle;
 }
 
 .wrapper div:hover .word{
@@ -228,7 +221,7 @@ main {
 }
 
 .wrapper div:hover{
-  transform: scale(1.3);
+  transform: scale(1.4);
   box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.15);
   z-index: 5;
 }
@@ -236,14 +229,14 @@ main {
 .expl{
   color: white;
   display: none;
-  font-size: 1vw;
+  font-size: 1rem;
   justify-content:center;
-  margin-top: 25%;
   vertical-align: center;
+  padding: 0.1rem;
 }
 
 .word{
-  font-size: 2vw;
+  font-size: 4vw;
   color: white;
   display: flex;
   justify-content: center;
@@ -261,7 +254,7 @@ main {
   bottom: 0;
   height: 4vh;
   margin-top: 10rem;
-  font-size: 0.5rem;
+  font-size: 0.9rem;
 }
 
 .icon{
@@ -271,9 +264,6 @@ main {
 
 .tabtext{
   display: inline-block;
-}
-.quote{
-  font-size: medium;
 }
 
 .carousel-container{
@@ -339,6 +329,17 @@ main {
   .tabtext {display:none;}
   .carousel-container {width: 90vw;}
   .carousel {width: 90vw;}
+  .wrapper {
+    display: grid; 
+    grid-template-columns: 70vw;
+    gap: 15vw;
+    padding-left: 15vw;
+    grid-template-rows: repeat(6, 70vw);}
+
+  .wrapper div{
+    grid-column: auto;
+    grid-row: auto}
+  #About-Me {background-image: none;}
 }
 
 /* when the screen is above 801pixels the tab buttons show words, otherwise they show vector icons */
@@ -362,4 +363,10 @@ main {
 
 @media all and (max-width: 1500px){
   .flexbox-row {background-image: none;}
+}
+
+.scroll-down{
+  position: relative;
+  bottom: 2vh; 
+  padding-bottom: 15vh; 
 }
