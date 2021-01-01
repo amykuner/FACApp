@@ -40,6 +40,10 @@
       <span class="icon"> <i class="fas fa-link"></i></span>
       <span class="tabtext">Links</span>
     </button>
+    <button class="tablinks" onclick="chooseTab(event, 'Game'); footerFlat('Game')" id="gameButton">
+      <span class="icon"><i class="fas fa-dice"></i></span>
+      <span class="tabtext">Game</span>
+    </button>
   </div>
   
   <div id="Home" class="tabcontent">
@@ -148,9 +152,40 @@
     </p>
   </div>
 
+  <div id="Game" class="tabcontent">
+    <h2>Higher or Lower?</h2>
+    <div class="card-container">
+      <div class="row1">
+        <div class="cards" id="card1">
+
+        </div>
+      </div>
+      <div class="row2">
+        <div class="cards" id="card2">
+
+        </div>
+       <div class="cards" id="card3">
+
+       </div>
+      </div>
+      <div class="row3">
+        <div class="cards" id="card4">
+
+        </div>
+        <div class="cards" id="card5">
+
+        </div>
+        <div class="cards" id="card6">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 <footer class="footer">
   <span>&#169;</span> Amy Kuner 2020
+  <input type="checkbox" id="dmcheckbox"><label> dark mode </label>
 </footer>
 <script src="FACApp.js"></script>
 </html>
