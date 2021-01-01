@@ -38,7 +38,6 @@ html.dark{
   overflow: hidden;
   border: none;
   position: relative; 
-  
 }
 
 .tab button{
@@ -53,7 +52,7 @@ html.dark{
   font-size: 1.75rem;
   padding-bottom: 0.8rem;
   padding-top: 0.8rem;
-  width: 25%;
+  width: 20%;
   
 }
   
@@ -87,21 +86,13 @@ body {
   font-family: "Libre Franklin", sans-serif;
 }
    
-h1 {
- font-size: 4vmax;
-}
+h1 {font-size: 4vmax;}
 
-h2 {
- font-size: 3vmax;
-}
+h2 {font-size: 3vmax;}
   
-p {
- font-size: 1.2rem;
-}
+p { font-size: 1.2rem;}
 
-main {
-  justify-content: center;
-}
+main {justify-content: center;}
 
 #diag-box-one {
   background-image: linear-gradient(45deg,var(--accent-color), var(--accent-color));
@@ -147,9 +138,7 @@ main {
   margin-bottom: 10vh;
 }
 
-.hero-text {
-  font-size: 4vw;
-}
+.hero-text {font-size: 4vw;}
 
 .flexbox-row{
   display: flex;
@@ -174,12 +163,9 @@ main {
   background-size: 70%;
   background-position: center;
   background-attachment: fixed;
-
 }
 
-.wrapper p{
-  color: var(--main-text);
-}
+.wrapper p{color: var(--main-text);}
 
 .wrapper div{
   z-index: 3;
@@ -341,6 +327,38 @@ main {
   right: -10px;
 }
 
+.card-container{
+  margin: 10px;
+  display: inline-block;
+  
+}
+
+.row1{
+  display: flex;
+  justify-content: center;
+}
+
+.row2{
+  display: flex;
+  justify-content: center;
+}
+
+.row3{
+  display: flex;
+  justify-content: center;
+}
+
+.cards{
+  height: 15vh;
+  width: 11vh;
+  border-radius: 15%;
+  border:2px solid var(--main-text);
+  background-image: var(--bg-circle);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-color: var(--accent-text);
+}
 
 @media all and (max-device-width: 700px){
   .icon {display:inline-block;}
