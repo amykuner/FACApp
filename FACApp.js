@@ -70,10 +70,22 @@ function footerFlat(tabName){
 } 
 
 function darkMode(){
-  
-}
+    document.documentElement.classList.toggle("dark");
+  }
+document.getElementById("dmcheckbox").addEventListener("change", darkMode);
 
 //function flip(section){
   //.words.style.display = "none";
   //.expl.style.display = "inline-block";
 //}
+
+
+// function higherLower(){
+//   //need another tab with 6 cards overturned. 
+//   //pre function - create cards and set all to picture of back of card. 
+//   //when pressing start, shuffle the cards
+// //on click, reveal card other side, ask to enter higher or lower 
+// //reveal next card. if answer correct, repeat loop
+// //if answer incorrect, alert(You got beaten by probability. Do you want to try again?)
+
+// }
