@@ -90,7 +90,6 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
 
 var cardobjs = document.getElementsByClassName("cards");
 var cards = Array.prototype.slice.call(cardobjs, 0)
-cards.sort();
 console.log(cards);
 
 function higherLower(){
@@ -111,6 +110,7 @@ for (let i = 0; i < cards.length; i++){
       //if not, alert about losing
       //lower.onclick means i =+1;
       //counter plus one when button is clicked
+      i++
     }
     alert("WINNER WINNER CHICKEN DINNER")
   }

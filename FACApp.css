@@ -330,7 +330,8 @@ main {justify-content: center;}
 
 .card-container{
   margin: 10px;
-  display: inline-block;  
+  display: flex;  
+  flex-direction: column-reverse;;
 }
 
 .card-container div{
@@ -349,31 +350,6 @@ main {justify-content: center;}
   background-size: contain;
   background-color: var(--accent-text);
 }
-
-#card1{
-  order: 1;
-}
-
-#card2{
-  order: 2;
-}
-
-#card3{
-  order: 3;
-}
-
-#card4{
-  order: 4;
-}
-
-#card5{
-  order: 5;
-}
-
-#card6{
-  order: 6;
-}
-
 
 .cards-selected{
   display: flex;
