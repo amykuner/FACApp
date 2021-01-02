@@ -109,3 +109,5 @@ function higherLower(){
 // //reveal next card. if answer correct, repeat loop
 alert("You got beaten by probability. Do you want to try again?");
 }
+
+console.log("PLEASE WORK");
