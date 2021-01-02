@@ -94,20 +94,25 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
 function higherLower(){
 //makes all backgrounds standard
 var cards = document.getElementsByClassName("cards");
+console.log(cards);
+//need to get an array with the same elements as cardsobj , cards = Array.prototype.slice
 for (let i = 0; i < cards.length; i++){
   cards[i].className = "cards";
   cards[i].textContent = "";
-  console.log(cards[i].textContent);
+  console.log(cards);
 }
-// //on click, generates random number between 0 and 13 
-  let random = Math.floor(Math.random()*13) + 1;
-  document.getElementById("card1").className = "cards-selected"
-  document.getElementById("card1").textContent = random;
-  console.log(document.getElementById("card1"));
-  //get array of cards so can append each 
-  var guesses = []
-  //add in buttons and choose input
-  //if(console.log(Math.floor(Math.random()*13) + 1)) > guesses[0] && option selected is higher || random number < guesses[0] && option selected is lower, continue
+  //order them by class
+  for(var i = 0; i < 1; i++){
+    if(cards[0]!= ""){
+      let random = Math.floor(Math.random()*13) + 1;
+      console.log(i);
+      cards[i].textContent = random;
+      cards[i].className = "cards-selected";
+      i--;
+    }
+  }
+  //add buttons for higher and lower, which are hidden until next thing shown 
+  //if(random > card2 inner text &&guesses[0 option selected is higher || random number < guesses[0] && higher = name
   for (let i = 1; i < 2; i++){
     // console.log(Math.floor(Math.random()*13) + 1);
     //setcurrent card class to flipped and then add random number in center
