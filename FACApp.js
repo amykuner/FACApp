@@ -71,13 +71,11 @@ function footerFlat(tabName){
 
 function darkMode(){
     document.documentElement.classList.toggle("dark");
-    console.log(document.documentElement.className);
   }
 document.getElementById("dmbutton").addEventListener("click", darkMode);
 
 function dmBall(){
   document.documentElement.className == "dark" ? document.getElementById("dmball").style.transform = "translateX(30px)" : document.getElementById("dmball").style.transform = "translateX(0px)";
-  console.log(document.getElementById("dmball").style.transform);
 }
 document.getElementById("dmbutton").addEventListener("click", dmBall);
 
@@ -90,36 +88,53 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
   //.expl.style.display = "inline-block";
 //}
 
+var cardobjs = document.getElementsByClassName("cards");
+var cards = Array.prototype.slice.call(cardobjs, 0)
+cards.sort();
+console.log(cards);
 
 function higherLower(){
 //makes all backgrounds standard
-var cards = document.getElementsByClassName("cards");
 for (let i = 0; i < cards.length; i++){
   cards[i].className = "cards";
   cards[i].textContent = "";
-  console.log(cards);
 }
+  //call next bit when a button is clicked
+
   //order them by class
+  let i = 0;
+  while(i < 6){
+      //higher.style.display="flex";
+      //lower.style.display="flex";
+      //higher.onclick 
+      //if random > card means random = Math.floor(Math.random()*13) + 1; i =+ 1 and cards[i].textContent = random;      cards[i].className = "cards-selected";
+      //if not, alert about losing
+      //lower.onclick means i =+1;
+      //counter plus one when button is clicked
+    }
+    alert("WINNER WINNER CHICKEN DINNER")
+  }
+  //if(random > card2 inner text &&guesses[0 option selected is higher || random number < guesses[0] && higher = name
+    // console.log(Math.floor(Math.random()*13) + 1);
+    //setcurrent card class to flipped and then add random number in center
+    // guesses.push(prompt("Please enter either 'Higher' or 'Lower')"));
+    
+
+
+// //reveal next card. if answer correct, repeat loop
+// alert("You got beaten by probability. Do you want to try again?");
+
+
+function nextCard(i){
   for(var i = 0; i < 1; i++){
     if(cards.length > 0){
       let random = Math.floor(Math.random()*13) + 1;
       console.log(i);
       cards[i].textContent = random;
       cards[i].className = "cards-selected";
+      //higher.style.display="none";
+      //lower.style.display="none";
       i--;
     }
   }
-  //add buttons for higher and lower, which are hidden until next thing shown 
-  //if(random > card2 inner text &&guesses[0 option selected is higher || random number < guesses[0] && higher = name
-  for (let i = 1; i < 2; i++){
-    // console.log(Math.floor(Math.random()*13) + 1);
-    //setcurrent card class to flipped and then add random number in center
-    // guesses.push(prompt("Please enter either 'Higher' or 'Lower')"));
-    
-
-//ask to enter higher or lower 
-}
-
-// //reveal next card. if answer correct, repeat loop
-// alert("You got beaten by probability. Do you want to try again?");
 }

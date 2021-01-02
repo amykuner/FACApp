@@ -350,6 +350,31 @@ main {justify-content: center;}
   background-color: var(--accent-text);
 }
 
+#card1{
+  order: 1;
+}
+
+#card2{
+  order: 2;
+}
+
+#card3{
+  order: 3;
+}
+
+#card4{
+  order: 4;
+}
+
+#card5{
+  order: 5;
+}
+
+#card6{
+  order: 6;
+}
+
+
 .cards-selected{
   display: flex;
   justify-content: center;
