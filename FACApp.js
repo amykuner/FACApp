@@ -94,8 +94,6 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
 function higherLower(){
 //makes all backgrounds standard
 var cards = document.getElementsByClassName("cards");
-console.log(cards);
-//need to get an array with the same elements as cardsobj , cards = Array.prototype.slice
 for (let i = 0; i < cards.length; i++){
   cards[i].className = "cards";
   cards[i].textContent = "";
@@ -103,7 +101,7 @@ for (let i = 0; i < cards.length; i++){
 }
   //order them by class
   for(var i = 0; i < 1; i++){
-    if(cards[0]!= ""){
+    if(cards.length > 0){
       let random = Math.floor(Math.random()*13) + 1;
       console.log(i);
       cards[i].textContent = random;
