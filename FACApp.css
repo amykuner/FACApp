@@ -31,6 +31,7 @@ html.dark{
   text-align: center;
   box-sizing: border-box;
 }
+/* BUG: TAB BACKG COLOR CHANGES AFTER MAIN PAGE WHEN CHANGIN THEMES */
 
 .tab{
   display: flex;
@@ -350,15 +351,23 @@ main {justify-content: center;}
 }
 
 .cards-selected{
+  display: flex;
+  justify-content: center;
+  background-color: var(--accent-text);
   background-image: none;
+  height: 15vh;
+  width: 11vh;
+  border-radius: 15%;
+  border:2px solid var(--main-text);
+  font-size: 5vh;
 }
 
 .new-game{
   display:flex;
   justify-content: center;
-  border-radius: 30%;
+  border-radius: 30px;
   width: 20vw;
-  height: 10vh;
+  height: 20px;
   background-color: var(--background);
   color: var(--main-text);
   vertical-align: center;
@@ -438,6 +447,7 @@ main {justify-content: center;}
   bottom: 2vh; 
   padding-bottom: 15vh; 
 }
+/* BUG: when hovering near the arrow it starts flickering */
  
 @keyframes move-arrow {
   0%{

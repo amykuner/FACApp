@@ -81,6 +81,10 @@ function dmBall(){
 }
 document.getElementById("dmbutton").addEventListener("click", dmBall);
 
+// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+//   // dark mode
+// }
+
 //function flip(section){
   //.words.style.display = "none";
   //.expl.style.display = "inline-block";
@@ -88,24 +92,31 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
 
 
 function higherLower(){
-//makes all backgrounds standard (sets all to cards class)
+//makes all backgrounds standard
+var cards = document.getElementsByClassName("cards");
+for (let i = 0; i < cards.length; i++){
+  cards[i].className = "cards";
+  cards[i].textContent = "";
+  console.log(cards[i].textContent);
+}
 // //on click, generates random number between 0 and 13 
-  console.log(Math.floor(Math.random()*14));
-  document.getElementById("card1")
+  let random = Math.floor(Math.random()*13) + 1;
+  document.getElementById("card1").className = "cards-selected"
+  document.getElementById("card1").textContent = random;
+  console.log(document.getElementById("card1"));
   //get array of cards so can append each 
   var guesses = []
   //add in buttons and choose input
   //if(console.log(Math.floor(Math.random()*13) + 1)) > guesses[0] && option selected is higher || random number < guesses[0] && option selected is lower, continue
   for (let i = 1; i < 2; i++){
-    console.log(Math.floor(Math.random()*13) + 1);
+    // console.log(Math.floor(Math.random()*13) + 1);
     //setcurrent card class to flipped and then add random number in center
-    guesses.push(prompt("Please enter either 'Higher' or 'Lower')"));
+    // guesses.push(prompt("Please enter either 'Higher' or 'Lower')"));
     
 
 //ask to enter higher or lower 
-  console.log(guesses);
 }
 
 // //reveal next card. if answer correct, repeat loop
-alert("You got beaten by probability. Do you want to try again?");
+// alert("You got beaten by probability. Do you want to try again?");
 }
