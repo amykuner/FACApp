@@ -71,8 +71,15 @@ function footerFlat(tabName){
 
 function darkMode(){
     document.documentElement.classList.toggle("dark");
+    console.log(document.documentElement.className);
   }
-document.getElementById("dmcheckbox").addEventListener("change", darkMode);
+document.getElementById("dmbutton").addEventListener("click", darkMode);
+
+function dmBall(){
+  document.documentElement.className == "dark" ? document.getElementById("dmball").style.transform = "translateX(30px)" : document.getElementById("dmball").style.transform = "translateX(0px)";
+  console.log(document.getElementById("dmball").style.transform);
+}
+document.getElementById("dmbutton").addEventListener("click", dmBall);
 
 //function flip(section){
   //.words.style.display = "none";
@@ -80,12 +87,25 @@ document.getElementById("dmcheckbox").addEventListener("change", darkMode);
 //}
 
 
-// function higherLower(){
-//   //need another tab with 6 cards overturned. 
-//   //pre function - create cards and set all to picture of back of card. 
-//   //when pressing start, shuffle the cards
-// //on click, reveal card other side, ask to enter higher or lower 
-// //reveal next card. if answer correct, repeat loop
-// //if answer incorrect, alert(You got beaten by probability. Do you want to try again?)
+function higherLower(){
+//makes all backgrounds standard (sets all to cards class)
+// //on click, generates random number between 0 and 13 
+  console.log(Math.floor(Math.random()*14));
+  document.getElementById("card1")
+  //get array of cards so can append each 
+  var guesses = []
+  //add in buttons and choose input
+  //if(console.log(Math.floor(Math.random()*13) + 1)) > guesses[0] && option selected is higher || random number < guesses[0] && option selected is lower, continue
+  for (let i = 1; i < 2; i++){
+    console.log(Math.floor(Math.random()*13) + 1);
+    //setcurrent card class to flipped and then add random number in center
+    guesses.push(prompt("Please enter either 'Higher' or 'Lower')"));
+    
 
-// }
+//ask to enter higher or lower 
+  console.log(guesses);
+}
+
+// //reveal next card. if answer correct, repeat loop
+alert("You got beaten by probability. Do you want to try again?");
+}
