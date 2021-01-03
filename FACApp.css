@@ -96,6 +96,8 @@ p { font-size: 1.2rem;}
 
 main {justify-content: center;}
 
+button {font-family: "Libre Franklin", sans-serif};
+
 #diag-box-one {
   background-image: linear-gradient(45deg,var(--accent-color), var(--accent-color));
   transform:skewY(10deg);
@@ -330,9 +332,13 @@ main {justify-content: center;}
 }
 
 .card-container{
-  margin: 10px;
+  margin: 0;
   display: flex;  
-  flex-direction: column-reverse;;
+  background-image: var(--bg-carousel);
+  background-position: center;
+  background-size: 100%;
+  flex-direction: column-reverse;
+  background-repeat: no-repeat;
 }
 
 .card-container div{
@@ -413,7 +419,9 @@ main {justify-content: center;}
   width: 20px;
   background-color: var(--background);
   border-radius: 50%;
-  padding: 4.9px;
+  padding: 4px;
+  margin-top:1px;
+  margin-left: 1px;
   transform: none;
   transition: transform 0.4s linear;
 }
