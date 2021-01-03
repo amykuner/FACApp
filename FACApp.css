@@ -405,7 +405,15 @@ main {justify-content: center;}
   background-color: var(--main-text);
   right: 3vw;
   border-radius: 50px;
+  color: var(--background);
 }
+
+#dmbutton i{
+  position: relative;  
+  vertical-align: center;
+  font-size: 15px;
+  padding: 2px;
+} 
 
 #dmball{
   position: absolute;

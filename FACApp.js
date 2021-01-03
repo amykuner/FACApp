@@ -131,7 +131,6 @@ for (let i = 0; i < cards.length; i++){
           i=+ 5;
           alert("YOU LOST");
           return;
-          //BUG: ALWAYS SELECTS SAME NUMBER IF CHOOSING LOWER
         }
       } //end of lower click function
     } //end of if i < 5 clause
@@ -140,15 +139,7 @@ for (let i = 0; i < cards.length; i++){
     return;
   }
   }
-
-    //alert("WINNER WINNER CHICKEN DINNER")
-
-  //if(random > card2 inner text &&guesses[0 option selected is higher || random number < guesses[0] && higher = name
-    // console.log(Math.floor(Math.random()*13) + 1);
-    //setcurrent card class to flipped and then add random number in center
-    // guesses.push(prompt("Please enter either 'Higher' or 'Lower')"));
-    
-
+//MOVE THE IF FUNCTION INSIDE BOTH THE ONCLICK FUNCTIONS 
 
 // //reveal next card. if answer correct, repeat loop
 // alert("You got beaten by probability. Do you want to try again?");
