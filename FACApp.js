@@ -89,6 +89,8 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
 //}
 
 var cards = document.querySelectorAll("div.cards");
+var higher = document.getElementById("higher");
+var lower = document.getElementById("lower");
 console.log(cards);
 
 function higherLower(){
@@ -97,20 +99,51 @@ for (let i = 0; i < cards.length; i++){
   cards[i].className = "cards";
   cards[i].textContent = "";
 }
-  //call next bit when a button is clicked
+  //show first card
+  let random = Math.floor(Math.random()*13) + 1;
+  cards[0].textContent = random;
+  console.log(cards);
+  cards[0].className = "cards-selected";
+  higher.style.display="inline-block";
+  lower.style.display="inline-block";
+
   let i = 0;
-  while(i < 6){
-      //higher.style.display="flex";
-      //lower.style.display="flex";
-      //higher.onclick 
-      //if random > card means random = Math.floor(Math.random()*13) + 1; i =+ 1 and cards[i].textContent = random;      cards[i].className = "cards-selected";
-      //if not, alert about losing
-      //lower.onclick means i =+1;
-      //counter plus one when button is clicked
-      i++;
+  if(i < 5){
+      higher.onclick = function(){
+        let random = Math.floor(Math.random()*13) + 1;
+        cards[i+1].className = "cards-selected";
+        cards[i+1].textContent = random;
+        if (random > cards[i].textContent){
+          i++;
+        } else {
+        i=+ 5;
+        alert("YOU LOST");
+        return;
+        }
+      }
+      lower.onclick = function(){
+        console.log(cards);
+        console.log(i);
+        console.log(cards[i+1]);
+        cards[i+1].className = "cards-selected";
+        cards[i+1].textContent = random;
+        if(random < cards[i].textContent){
+          i++;
+        } else {
+          i=+ 5;
+          alert("YOU LOST");
+          return;
+        }
+      }
     }
-    alert("WINNER WINNER CHICKEN DINNER")
+  else {
+    alert("the game has finished stop pressing higher or lower!!!")
+    return;
   }
+  }
+
+    //alert("WINNER WINNER CHICKEN DINNER")
+
   //if(random > card2 inner text &&guesses[0 option selected is higher || random number < guesses[0] && higher = name
     // console.log(Math.floor(Math.random()*13) + 1);
     //setcurrent card class to flipped and then add random number in center
@@ -120,18 +153,3 @@ for (let i = 0; i < cards.length; i++){
 
 // //reveal next card. if answer correct, repeat loop
 // alert("You got beaten by probability. Do you want to try again?");
-
-
-function nextCard(i){
-  for(var i = 0; i < 1; i++){
-    if(cards.length > 0){
-      let random = Math.floor(Math.random()*13) + 1;
-      console.log(i);
-      cards[i].textContent = random;
-      cards[i].className = "cards-selected";
-      //higher.style.display="none";
-      //lower.style.display="none";
-      i--;
-    }
-  }
-}
