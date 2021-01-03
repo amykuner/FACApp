@@ -88,19 +88,16 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
   //.expl.style.display = "inline-block";
 //}
 
-var cardobjs = document.getElementsByClassName("cards");
-var cards = Array.prototype.slice.call(cardobjs, 0)
+var cards = document.querySelectorAll("div.cards");
 console.log(cards);
 
 function higherLower(){
-//makes all backgrounds standard
+//makes all backgrounds standard on reset
 for (let i = 0; i < cards.length; i++){
   cards[i].className = "cards";
   cards[i].textContent = "";
 }
   //call next bit when a button is clicked
-
-  //order them by class
   let i = 0;
   while(i < 6){
       //higher.style.display="flex";
@@ -110,7 +107,7 @@ for (let i = 0; i < cards.length; i++){
       //if not, alert about losing
       //lower.onclick means i =+1;
       //counter plus one when button is clicked
-      i++
+      i++;
     }
     alert("WINNER WINNER CHICKEN DINNER")
   }

@@ -375,6 +375,22 @@ main {justify-content: center;}
   font-family: "Libre Franklin", sans-serif;
 }
 
+.hlbuttons button{
+  background-color: var(--accent-color);
+  color: var(--main-text);
+  display: none;
+}
+
+.higher{
+
+}
+
+.lower{
+
+
+}
+
+
 /* #dmcheckbox{
   position: absolute;
   right: 2vw;
