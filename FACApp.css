@@ -54,8 +54,8 @@ html.dark{
   padding-bottom: 0.8rem;
   padding-top: 0.8rem;
   width: 20%;
-  
 }
+/*BUG: TABS CHANGE SIZE WHEN YOU CLICK ON ONE THAT NEEDS A SCROLL BAR */
   
 .tab button:hover {
   color: var(--accent-text);

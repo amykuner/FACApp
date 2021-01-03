@@ -122,9 +122,7 @@ for (let i = 0; i < cards.length; i++){
         }
       }
       lower.onclick = function(){
-        console.log(cards);
-        console.log(i);
-        console.log(cards[i+1]);
+        let random = Math.floor(Math.random()*13) + 1;
         cards[i+1].className = "cards-selected";
         cards[i+1].textContent = random;
         if(random <= cards[i].textContent){
@@ -133,6 +131,7 @@ for (let i = 0; i < cards.length; i++){
           i=+ 5;
           alert("YOU LOST");
           return;
+          //BUG: ALWAYS SELECTS SAME NUMBER IF CHOOSING LOWER
         }
       } //end of lower click function
     } //end of if i < 5 clause
