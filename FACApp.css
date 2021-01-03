@@ -30,7 +30,6 @@ html.dark{
   color: var(--main-text);
   text-align: center;
   box-sizing: border-box;
-  
 }
 /* BUG: TAB BACKG COLOR CHANGES AFTER MAIN PAGE WHEN CHANGIN THEMES */
 /*make scrollbar = "none"?*/
@@ -96,7 +95,7 @@ p { font-size: 1.2rem;}
 
 main {justify-content: center;}
 
-button {font-family: "Libre Franklin", sans-serif};
+button {font-family: "Libre Franklin", sans-serif;}
 
 #diag-box-one {
   background-image: linear-gradient(45deg,var(--accent-color), var(--accent-color));
@@ -120,7 +119,7 @@ button {font-family: "Libre Franklin", sans-serif};
 
 #dbo-content-two {
   transform: skewY(4deg);
-  display: inline-block
+  display: inline-block;
 }
 
 #dbo-content-three {
