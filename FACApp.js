@@ -108,38 +108,41 @@ for (let i = 0; i < cards.length; i++){
   lower.style.display="inline-block";
 
   var i = 0;
-  if(i < 5){
+
       higher.onclick = function(){
-        let random = Math.floor(Math.random()*13) + 1;
-        cards[i+1].className = "cards-selected";
-        cards[i+1].textContent = random;
-        if (random >= cards[i].textContent){
-          i++;
-        } else {
-        i=+ 5;
-        alert("YOU LOST");
-        return;
+        if(i < 5){
+         let random = Math.floor(Math.random()*13) + 1;
+          cards[i+1].className = "cards-selected";
+          cards[i+1].textContent = random;
+          if (random >= cards[i].textContent){
+            //add another if clause here - if on last clause operate differently, else continue normally
+            i++;
+          } else {
+          i=+ 5;
+          alert("YOU LOST");
+          higher.style.display="none";
+          lower.style.display="none";
+          return;
+          }
         }
       }
       lower.onclick = function(){
-        let random = Math.floor(Math.random()*13) + 1;
-        cards[i+1].className = "cards-selected";
-        cards[i+1].textContent = random;
-        if(random <= cards[i].textContent){
-          i++;
-        } else {
-          i=+ 5;
-          alert("YOU LOST");
-          return;
+        if(i < 5){
+          let random = Math.floor(Math.random()*13) + 1;
+          cards[i+1].className = "cards-selected";
+          cards[i+1].textContent = random;
+          if(random <= cards[i].textContent){
+            i++;
+          } else {
+            i=+ 5;
+            alert("YOU LOST");
+            higher.style.display="none";
+            lower.style.display="none";
+            return;
         }
-      } //end of lower click function
-    } //end of if i < 5 clause
-  else {
-    alert("the game has finished stop pressing higher or lower!!!")
-    return;
+      } 
+    }
   }
-  }
-//MOVE THE IF FUNCTION INSIDE BOTH THE ONCLICK FUNCTIONS 
-
-// //reveal next card. if answer correct, repeat loop
 // alert("You got beaten by probability. Do you want to try again?");
+
+//create card function to call within higherlower where if random number is 11 12 13 it returns jack queen king instead

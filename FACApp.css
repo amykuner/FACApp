@@ -32,7 +32,7 @@ html.dark{
   box-sizing: border-box;
 }
 /* BUG: TAB BACKG COLOR CHANGES AFTER MAIN PAGE WHEN CHANGIN THEMES */
-
+/*make scrollbar = "none"?*/
 .tab{
   display: flex;
   flex-direction: row;
