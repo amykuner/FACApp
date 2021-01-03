@@ -480,7 +480,3 @@ main {justify-content: center;}
   font-size: 5vh;
   animation: move-arrow 1s linear infinite;
 }
-
-.scroll-down i:hover{
-  animation: none;
-}

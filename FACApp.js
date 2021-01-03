@@ -107,13 +107,13 @@ for (let i = 0; i < cards.length; i++){
   higher.style.display="inline-block";
   lower.style.display="inline-block";
 
-  let i = 0;
+  var i = 0;
   if(i < 5){
       higher.onclick = function(){
         let random = Math.floor(Math.random()*13) + 1;
         cards[i+1].className = "cards-selected";
         cards[i+1].textContent = random;
-        if (random > cards[i].textContent){
+        if (random >= cards[i].textContent){
           i++;
         } else {
         i=+ 5;
@@ -127,15 +127,15 @@ for (let i = 0; i < cards.length; i++){
         console.log(cards[i+1]);
         cards[i+1].className = "cards-selected";
         cards[i+1].textContent = random;
-        if(random < cards[i].textContent){
+        if(random <= cards[i].textContent){
           i++;
         } else {
           i=+ 5;
           alert("YOU LOST");
           return;
         }
-      }
-    }
+      } //end of lower click function
+    } //end of if i < 5 clause
   else {
     alert("the game has finished stop pressing higher or lower!!!")
     return;
