@@ -6,9 +6,9 @@ html {
   --accent-color: #e005a4;
   --accent-color2: #fe4c34;
   --hero-url: url("./Images/hero.jpg");
-  --bg-dots:url("Images/bg-dots.jpg")   ;
-  --bg-circle: url("Images/bg-circle.jpg")  ;
-  --bg-carousel: url("Images/bg-carousel.jpg");
+  --bg-dots:url("./Images/bg-dots.jpg")   ;
+  --bg-circle: url("./Images/bg-circle.jpg")  ;
+  --bg-carousel: url("./Images/bg-carousel.jpg");
   --carouselbright: brightness(100%) ;
   background-color: var(--background);
   color: var(--main-text);
@@ -24,10 +24,10 @@ html.dark{
   --accent-text: #a1a1e5;
   --accent-color: #0F1E57;
   --accent-color2: #121240;
-  --hero-url: url("Images/hero-dark.jpg");
-  --bg-dots: url("Images/bg-dots-dark.jpg");
-  --bg-circle: url("Images/bg-circle-dark.jpg");
-  --bg-carousel: url("Images/bg-carousel-dark.jpg");
+  --hero-url: url("./Images/hero-dark.jpg");
+  --bg-dots: url("./Images/bg-dots-dark.jpg");
+  --bg-circle: url("./Images/bg-circle-dark.jpg");
+  --bg-carousel: url("./Images/bg-carousel-dark.jpg");
   --carouselbright: brightness(70%);
   background-color: var(--background);
   color: var(--main-text);
@@ -378,25 +378,23 @@ button {font-family: "Libre Franklin", sans-serif;}
   justify-content: center;
   border-radius: 30px;
   width: 20vw;
-  height: 20px;
+  height: 40px;
   background-color: var(--background);
   color: var(--main-text);
   vertical-align: center;
   font-family: "Libre Franklin", sans-serif;
+  display: inline-block;
+  text-align: center;
 }
 
 .hlbuttons button{
   background-color: var(--accent-color);
   color: var(--main-text);
   display: none;
+  border-radius: 30px;
+  text-align: center;
+  display: inline-block;
 }
-
-/* #dmcheckbox{
-  position: absolute;
-  right: 2vw;
-  z-index: 2;
-  opacity: 1;
-} */
 
 #dmbutton{
   position: absolute;
