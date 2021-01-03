@@ -14,7 +14,7 @@ html {
   color: var(--main-text);
   text-align: center;
   box-sizing: border-box;
-
+  overflow-y: scroll;
 } 
 
 html.dark{
@@ -33,6 +33,7 @@ html.dark{
   color: var(--main-text);
   text-align: center;
   box-sizing: border-box;
+  overflow-y: scroll;
 }
 /* BUG: TAB BACKG COLOR CHANGES AFTER MAIN PAGE WHEN CHANGIN THEMES */
 /*make scrollbar = "none"?*/
@@ -377,14 +378,17 @@ button {font-family: "Libre Franklin", sans-serif;}
   display:flex;
   justify-content: center;
   border-radius: 30px;
-  width: 20vw;
-  height: 40px;
+  /* width: 20vw;
+  height: 40px; */
   background-color: var(--background);
   color: var(--main-text);
   vertical-align: center;
   font-family: "Libre Franklin", sans-serif;
+  font-weight: 600;
   display: inline-block;
   text-align: center;
+  font-size: 2.5rem;
+  padding:1rem;
 }
 
 .hlbuttons button{
@@ -392,8 +396,13 @@ button {font-family: "Libre Franklin", sans-serif;}
   color: var(--main-text);
   display: none;
   border-radius: 30px;
+  /* width: 20vw;
+  height: 40px; */
   text-align: center;
-  display: inline-block;
+  display: none;
+  font-weight: 600;
+  font-size: 2.5rem;
+  padding: 1rem;
 }
 
 #dmbutton{
