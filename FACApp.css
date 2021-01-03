@@ -15,6 +15,7 @@ html {
   text-align: center;
   box-sizing: border-box;
   overflow-y: scroll;
+  transition: color 1s ease, background-color 0.5s ease;
 } 
 
 html.dark{
@@ -34,9 +35,9 @@ html.dark{
   text-align: center;
   box-sizing: border-box;
   overflow-y: scroll;
+  transition: color 1s ease, background-color 0.5s ease;
 }
-/* BUG: TAB BACKG COLOR CHANGES AFTER MAIN PAGE WHEN CHANGIN THEMES */
-/*make scrollbar = "none"?*/
+
 .tab{
   display: flex;
   flex-direction: row;
