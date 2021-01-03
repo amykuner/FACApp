@@ -353,7 +353,7 @@ main {justify-content: center;}
 
 .cards-selected{
   display: flex;
-  justify-content: center;
+  align-items: center;
   background-color: var(--accent-text);
   background-image: none;
   height: 15vh;

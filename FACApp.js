@@ -107,15 +107,17 @@ for (let i = 0; i < cards.length; i++){
   higher.style.display="inline-block";
   lower.style.display="inline-block";
 
+  //var clicked = []; so later we can identify and streamline function
   var i = 0;
 
       higher.onclick = function(){
+        
         if(i < 5){
          let random = Math.floor(Math.random()*13) + 1;
           cards[i+1].className = "cards-selected";
           cards[i+1].textContent = random;
           if (random >= cards[i].textContent){
-            //add another if clause here - if on last clause operate differently, else continue normally
+            //add another if clause here - if on last card operate differently, else continue normally
             i++;
           } else {
           i=+ 5;
@@ -133,6 +135,7 @@ for (let i = 0; i < cards.length; i++){
           cards[i+1].textContent = random;
           if(random <= cards[i].textContent){
             i++;
+            //add in extra clause if on last card
           } else {
             i=+ 5;
             alert("YOU LOST");
@@ -143,6 +146,7 @@ for (let i = 0; i < cards.length; i++){
       } 
     }
   }
+//streamline this function
 // alert("You got beaten by probability. Do you want to try again?");
 
 //create card function to call within higherlower where if random number is 11 12 13 it returns jack queen king instead
