@@ -74,10 +74,19 @@ function darkMode(){
   }
 document.getElementById("dmbutton").addEventListener("click", darkMode);
 
+
 function dmBall(){
   document.documentElement.className == "dark" ? document.getElementById("dmball").style.transform = "translateX(30px)" : document.getElementById("dmball").style.transform = "translateX(0px)";
 }
 document.getElementById("dmbutton").addEventListener("click", dmBall);
+
+function startMode(){
+  if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
+    darkMode();
+  }
+}
+
+startMode();
 
 // if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
 //   // dark mode
