@@ -135,8 +135,12 @@ for (let i = 0; i < cards.length; i++){
           console.log(randoms[i+1]);
           console.log(cards[i+1].textContent);
           if (randoms[i+1] >= randoms[i]){
-            //add another if clause here - if on last card operate differently, else continue normally
+            if(i == 4){
+              alert("congrts u won!!")
+            }
+            else{
             i++;
+            }
           } else {
           i=+ 5;
           alert("YOU LOST");
@@ -159,8 +163,12 @@ for (let i = 0; i < cards.length; i++){
           console.log(randoms[i+1]);
           console.log(cards[i+1].textContent);
           if(randoms[i+1] <= randoms[i]){
-            i++;
-            //add in extra clause if on last card
+            if(i == 4){
+              alert("congrts u won!!")
+            }
+            else{
+              i++;
+            }
           } else {
             i=+ 5;
             alert("YOU LOST");
