@@ -107,23 +107,29 @@ for (let i = 0; i < cards.length; i++){
   cards[i].className = "cards";
   cards[i].textContent = "";
 }
+  var randoms = [];
   //show first card
-  let random = Math.floor(Math.random()*13) + 1;
-  cards[0].textContent = random;
+  randoms.push(Math.floor(Math.random()*13) + 1);
+  cards[0].textContent = randoms[0];
   cards[0].className = "cards-selected";
   higher.style.display="inline-block";
   lower.style.display="inline-block";
-
   //var clicked = []; so later we can identify and streamline function
   var i = 0;
 
       higher.onclick = function(){
-        
         if(i < 5){
-         let random = Math.floor(Math.random()*13) + 1;
+         randoms.push(Math.floor(Math.random()*13) + 1);
+         console.log(randoms);
           cards[i+1].className = "cards-selected";
-          cards[i+1].textContent = random;
-          if (random >= cards[i].textContent){
+          if (randoms[i+1] == 1||randoms[i+1] == 11||randoms[i+1] == 12||randoms[i+1] == 13){
+            cards[i+1].textContent = numberCards(randoms[i+1]);
+          } else{
+            cards[i+1].textContent = randoms[i+1];
+          }
+          console.log(randoms[i+1]);
+          console.log(cards[i+1].textContent);
+          if (randoms[i+1] >= randoms[i]){
             //add another if clause here - if on last card operate differently, else continue normally
             i++;
           } else {
@@ -137,10 +143,17 @@ for (let i = 0; i < cards.length; i++){
       }
       lower.onclick = function(){
         if(i < 5){
-          let random = Math.floor(Math.random()*13) + 1;
+          randoms.push(Math.floor(Math.random()*13) + 1);
+          console.log(randoms);
           cards[i+1].className = "cards-selected";
-          cards[i+1].textContent = random;
-          if(random <= cards[i].textContent){
+          if (randoms[i+1] == 1||randoms[i+1] == 11||randoms[i+1] == 12||randoms[i+1] == 13){
+            cards[i+1].textContent = numberCards(randoms[i+1]);
+          } else{
+            cards[i+1].textContent = randoms[i+1];
+          }
+          console.log(randoms[i+1]);
+          console.log(cards[i+1].textContent);
+          if(randoms[i+1] <= randoms[i]){
             i++;
             //add in extra clause if on last card
           } else {
@@ -157,3 +170,21 @@ for (let i = 0; i < cards.length; i++){
 // alert("You got beaten by probability. Do you want to try again?");
 
 //create card function to call within higherlower where if random number is 11 12 13 it returns jack queen king instead
+function numberCards(number){
+  var letter;
+  switch(number){
+    case 1:
+      letter = "A";
+      break;
+    case 11:
+      letter = "J";
+      break;
+    case 12:
+      letter = "Q";
+      break;
+    case 13:
+      letter = "K";
+      break;
+  }
+  return letter;
+}
