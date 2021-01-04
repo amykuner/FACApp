@@ -100,7 +100,6 @@ startMode();
 var cards = document.querySelectorAll("div.cards");
 var higher = document.getElementById("higher");
 var lower = document.getElementById("lower");
-console.log(cards);
 
 function higherLower(){
 //makes all backgrounds standard on reset
@@ -111,7 +110,6 @@ for (let i = 0; i < cards.length; i++){
   //show first card
   let random = Math.floor(Math.random()*13) + 1;
   cards[0].textContent = random;
-  console.log(cards);
   cards[0].className = "cards-selected";
   higher.style.display="inline-block";
   lower.style.display="inline-block";
