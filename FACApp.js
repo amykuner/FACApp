@@ -101,6 +101,7 @@ var cards = document.querySelectorAll("div.cards");
 var higher = document.getElementById("higher");
 var lower = document.getElementById("lower");
 
+//STREAMLINE FUNCTION
 function higherLower(){
 //makes all backgrounds standard on reset
 for (let i = 0; i < cards.length; i++){
@@ -110,7 +111,11 @@ for (let i = 0; i < cards.length; i++){
   var randoms = [];
   //show first card
   randoms.push(Math.floor(Math.random()*13) + 1);
-  cards[0].textContent = randoms[0];
+  if (randoms[0] == 1||randoms[0] == 11||randoms[0] == 12||randoms[0] == 13){
+    cards[0].textContent = numberCards(randoms[0]);
+  } else{
+    cards[0].textContent = randoms[0];
+  }
   cards[0].className = "cards-selected";
   higher.style.display="inline-block";
   lower.style.display="inline-block";
