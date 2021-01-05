@@ -1,4 +1,6 @@
 html { 
+  height: 100%;
+  width: 100%;
   font-size: 100%;
   --background: #abe9fe;
   --main-text: black;
@@ -19,6 +21,8 @@ html {
 } 
 
 html.dark{
+  height: 100%;
+  width: 100%;
   font-size: 100%;
   --background: #010123;
   --main-text: #D5E4EC;
@@ -60,7 +64,6 @@ html.dark{
   padding-top: 0.8rem;
   width: 20%;
 }
-/*BUG: TABS CHANGE SIZE WHEN YOU CLICK ON ONE THAT NEEDS A SCROLL BAR */
   
 .tab button:hover {
   color: var(--accent-text);
@@ -86,6 +89,8 @@ html.dark{
 }
 
 body {
+  width: 100%;
+  display: inline-block;
   margin: 0;  
   position: relative;
   min-height: 100%;
@@ -107,33 +112,43 @@ svg{
 }
 
 #diag-box-one {
+  position: relative;
   background-image: linear-gradient(45deg,var(--accent-color), var(--accent-color));
   transform:skewY(10deg);
+  display: flex;
+  vertical-align: bottom;
 }
 
 #diag-box-two {
   background-image: linear-gradient(45deg,var(--accent-color2), var(--accent-color2));
   transform:skewY(-4deg);
+  display: flex;
+  vertical-align: bottom;
 }
 
 #diag-box-three {
   background-image: linear-gradient(45deg,var(--accent-color),var(--accent-color));
   transform:skewY(-10deg);
+  display: inline-block;
+  vertical-align: bottom;
 }
  
 #dbo-content {
   transform: skewY(4deg);
   display: inline-block;
+  vertical-align: bottom;
 }
 
 #dbo-content-two {
   transform: skewY(4deg);
   display: inline-block;
+  vertical-align: bottom;
 }
 
 #dbo-content-three {
   transform: skewY(4deg);
   display: inline-block;
+  vertical-align: bottom;
 }
 
 .hero-img {
