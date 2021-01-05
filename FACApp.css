@@ -115,40 +115,31 @@ svg{
   position: relative;
   background-image: linear-gradient(45deg,var(--accent-color), var(--accent-color));
   transform:skewY(10deg);
-  display: flex;
-  vertical-align: bottom;
 }
 
 #diag-box-two {
   background-image: linear-gradient(45deg,var(--accent-color2), var(--accent-color2));
   transform:skewY(-4deg);
-  display: flex;
-  vertical-align: bottom;
 }
 
 #diag-box-three {
   background-image: linear-gradient(45deg,var(--accent-color),var(--accent-color));
   transform:skewY(-10deg);
-  display: inline-block;
-  vertical-align: bottom;
 }
  
 #dbo-content {
   transform: skewY(4deg);
   display: inline-block;
-  vertical-align: bottom;
 }
 
 #dbo-content-two {
   transform: skewY(4deg);
   display: inline-block;
-  vertical-align: bottom;
 }
 
 #dbo-content-three {
   transform: skewY(4deg);
   display: inline-block;
-  vertical-align: bottom;
 }
 
 .hero-img {
