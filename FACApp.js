@@ -119,31 +119,30 @@ for (let i = 0; i < cards.length; i++){
   cards[0].className = "cards-selected";
   higher.style.display="inline-block";
   lower.style.display="inline-block";
-  //var clicked = []; so later we can identify and streamline function
+
   var i = 0;
 
       higher.onclick = function(){
         if(i < 5){
          randoms.push(Math.floor(Math.random()*13) + 1);
-         console.log(randoms);
           cards[i+1].className = "cards-selected";
           if (randoms[i+1] == 1||randoms[i+1] == 11||randoms[i+1] == 12||randoms[i+1] == 13){
             cards[i+1].textContent = numberCards(randoms[i+1]);
           } else{
             cards[i+1].textContent = randoms[i+1];
           }
-          console.log(randoms[i+1]);
-          console.log(cards[i+1].textContent);
           if (randoms[i+1] >= randoms[i]){
             if(i == 4){
-              alert("congrts u won!!")
+              alert("Congratulations! You are the master of probability! You can't stop when you're on a winning streak, so select 'New Game' to play again.")
+              higher.style.display="none";
+              lower.style.display="none";
             }
             else{
             i++;
             }
           } else {
           i=+ 5;
-          alert("YOU LOST");
+          alert("Uh oh. Looks like you got beaten by probability! Click 'New Game' to try again.");
           higher.style.display="none";
           lower.style.display="none";
           return;
@@ -153,32 +152,31 @@ for (let i = 0; i < cards.length; i++){
       lower.onclick = function(){
         if(i < 5){
           randoms.push(Math.floor(Math.random()*13) + 1);
-          console.log(randoms);
           cards[i+1].className = "cards-selected";
           if (randoms[i+1] == 1||randoms[i+1] == 11||randoms[i+1] == 12||randoms[i+1] == 13){
             cards[i+1].textContent = numberCards(randoms[i+1]);
           } else{
             cards[i+1].textContent = randoms[i+1];
           }
-          console.log(randoms[i+1]);
-          console.log(cards[i+1].textContent);
           if(randoms[i+1] <= randoms[i]){
             if(i == 4){
-              alert("congrts u won!!")
+              alert("Congratulations! You are the master of probability! You can't stop when you're on a winning streak, so select 'New Game' to play again.")
+              higher.style.display="none";
+              lower.style.display="none";
             }
             else{
               i++;
             }
           } else {
             i=+ 5;
-            alert("YOU LOST");
+            alert("Uh oh. Looks like you got beaten by probability! Click 'New Game' to try again.");
             higher.style.display="none";
             lower.style.display="none";
             return;
         }
       } 
     }
-  }
+  }//dr wiratunga
 //streamline this function
 // alert("You got beaten by probability. Do you want to try again?");
 
