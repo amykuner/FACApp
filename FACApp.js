@@ -176,7 +176,7 @@ for (let i = 0; i < cards.length; i++){
         }
       } 
     }
-  }//dr wiratunga
+  }
 //streamline this function
 // alert("You got beaten by probability. Do you want to try again?");
 

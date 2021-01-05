@@ -185,7 +185,7 @@ svg{
 
 .wrapper p{color: var(--main-text);}
 
-.wrapper div{
+.wrapper section{
   z-index: 3;
   display:flex;
   align-items: center;
@@ -238,15 +238,15 @@ svg{
   grid-column-end: 16;
 }
 
-.wrapper div:hover .expl{
+.wrapper section:hover .expl{
   display: inline-block;
 }
 
-.wrapper div:hover .word{
+.wrapper section:hover .word{
   display: none;
 }
 
-.wrapper div:hover{
+.wrapper section:hover{
   transform: scale(1.4);
   box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.15);
   z-index: 5;
@@ -459,7 +459,7 @@ svg{
     padding-left: 15vw;
     grid-template-rows: repeat(6, 70vw);}
 
-  .wrapper div{
+  .wrapper section{
     grid-column: auto;
     grid-row: auto}
   #About-Me {background-image: none;}
@@ -478,7 +478,7 @@ svg{
     padding-left: 15vw;
     grid-template-rows: repeat(6, 70vw);}
 
-  .wrapper div{
+  .wrapper section{
     grid-column: auto;
     grid-row: auto}
   #About-Me {background-image: none;}
