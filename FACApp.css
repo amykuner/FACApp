@@ -18,6 +18,8 @@ html {
   box-sizing: border-box;
   overflow-y: scroll;
   transition: fadeEffect 3s;
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
 } 
 
 html.dark{
