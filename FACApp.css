@@ -69,7 +69,7 @@ html.dark{
 }
   
 .tab button:hover {
-  color: var(--accent-text);
+  color: #D5E4EC;
   background-color:var(--accent-color);
 }
   
@@ -245,11 +245,11 @@ svg{
   grid-column-end: 16;
 }
 
-.wrapper section:hover .expl{
+.wrapper section:hover .expl, .wrapper section:active .expl{
   display: inline-block;
 }
 
-.wrapper section:hover .word{
+.wrapper section:hover .word, .wrapper section:active .word{
   display: none;
 }
 
@@ -500,7 +500,6 @@ svg{
   bottom: 2vh; 
   padding-bottom: 15vh; 
 }
-/* BUG: when hovering near the arrow it starts flickering */
  
 @keyframes move-arrow {
   0%{
