@@ -161,7 +161,7 @@ svg{
 .flexbox-row{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   background-image: var(--bg-dots);
   background-repeat: no-repeat;
