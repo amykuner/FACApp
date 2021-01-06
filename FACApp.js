@@ -83,6 +83,7 @@ document.getElementById("dmbutton").addEventListener("click", dmBall);
 function startMode(){
   if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
     darkMode();
+    dmBall();
   }
 }
 
@@ -149,6 +150,7 @@ for (let i = 0; i < cards.length; i++){
           }
         }
       }
+
       lower.onclick = function(){
         if(i < 5){
           randoms.push(Math.floor(Math.random()*13) + 1);

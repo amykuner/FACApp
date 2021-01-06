@@ -50,6 +50,7 @@ html.dark{
   overflow: hidden;
   border: none;
   position: relative; 
+  justify-content: center;
 }
 
 .tab button{
@@ -103,7 +104,11 @@ h1 {font-size: 4vmax;}
 
 h2 {font-size: 3vmax;}
   
-p { font-size: 1.2rem;}
+p { 
+  font-size: 1.2rem;
+  max-width: 60ch;
+  display: inline-block;
+}
 
 main {justify-content: center;}
 
