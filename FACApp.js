@@ -178,7 +178,6 @@ for (let i = 0; i < cards.length; i++){
     }
   }
 //streamline this function
-// alert("You got beaten by probability. Do you want to try again?");
 
 //create card function to call within higherlower where if random number is 11 12 13 it returns jack queen king instead
 function numberCards(number){
