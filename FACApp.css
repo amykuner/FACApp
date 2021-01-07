@@ -166,7 +166,7 @@ svg{
 .flexbox-row{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-image: var(--bg-dots);
   background-repeat: no-repeat;
@@ -175,11 +175,11 @@ svg{
   background-attachment: fixed;
 }
 
-@supports (-ms-accelerator: true) {
+/* @supports (-ms-accelerator: true) {
   .flexbox-row {
-    justify-content: space-around;
+    justify-content: center;
   }
-}
+} */
 
 .wrapper{
   display: grid;
