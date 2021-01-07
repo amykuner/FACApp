@@ -249,15 +249,15 @@ svg{
   grid-column-end: 16;
 }
 
-.wrapper section:hover .expl{
+.wrapper section:hover .expl, .wrapper section:active .expl{
   display: inline-block;
 }
 
-.wrapper section:hover .word{
+.wrapper section:hover .word, .wrapper section:active .word{
   display: none;
 }
 
-.wrapper section:hover{
+.wrapper section:hover, .wrapper section:active{
   transform: scale(1.4);
   box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.15);
   z-index: 5;
