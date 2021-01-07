@@ -89,14 +89,19 @@ function startMode(){
 
 startMode();
 
-// if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-//   // dark mode
-// }
-
 //function flip(section){
   //.words.style.display = "none";
   //.expl.style.display = "inline-block";
 //}
+
+// function touchHover(){
+//   if (matchMedia = phone){
+//     if doesnt equal ;
+//     onclick() = hover;
+//   }
+// }
+
+
 
 var cards = document.querySelectorAll("div.cards");
 var higher = document.getElementById("higher");

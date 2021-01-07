@@ -1,6 +1,5 @@
 html { 
   height: 100%;
-  width: 100%;
   font-size: 100%;
   --background: #abe9fe;
   --main-text: black;
@@ -24,7 +23,6 @@ html {
 
 html.dark{
   height: 100%;
-  width: 100%;
   font-size: 100%;
   --background: #010123;
   --main-text: #D5E4EC;
@@ -168,13 +166,20 @@ svg{
 .flexbox-row{
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   background-image: var(--bg-dots);
   background-repeat: no-repeat;
   background-size: 70%;
   background-position: center;
   background-attachment: fixed;
+}
+
+@supports (-ms-accelerator: true) {
+
+  .flexbox-row {
+    justify-content: space-around;
+  }
 }
 
 .wrapper{
@@ -245,11 +250,11 @@ svg{
   grid-column-end: 16;
 }
 
-.wrapper section:hover .expl, .wrapper section:active .expl{
+.wrapper section:hover .expl{
   display: inline-block;
 }
 
-.wrapper section:hover .word, .wrapper section:active .word{
+.wrapper section:hover .word{
   display: none;
 }
 
