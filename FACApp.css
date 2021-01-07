@@ -263,6 +263,12 @@ svg{
   z-index: 5;
 }
 
+/* @media (hover:none), (hover:on-demand) {
+  
+
+  }
+} */
+
 .expl{
   display: none;
   font-size: 1rem;
