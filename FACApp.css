@@ -176,7 +176,6 @@ svg{
 }
 
 @supports (-ms-accelerator: true) {
-
   .flexbox-row {
     justify-content: space-around;
   }
