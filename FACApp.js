@@ -94,16 +94,6 @@ startMode();
   //.expl.style.display = "inline-block";
 //}
 
-// function touchHover(){
-//   if (matchMedia = phone){
-//     if doesnt equal ;
-//     onclick() means:
-// .wrapper section:hover .expl, 
-// .wrapper section:hover .word
-// .wrapper section:hover
-//   }
-// }
-
 var cards = document.querySelectorAll("div.cards");
 var higher = document.getElementById("higher");
 var lower = document.getElementById("lower");
