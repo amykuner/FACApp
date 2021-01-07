@@ -97,8 +97,43 @@ startMode();
 // function touchHover(){
 //   if (matchMedia = phone){
 //     if doesnt equal ;
-//     onclick() = hover;
+//     onclick() means:
+// .wrapper section:hover .expl, 
+// .wrapper section:hover .word
+// .wrapper section:hover
 //   }
+// }
+
+// var wrapperKids = document.getElementsByClassName("wrapper")[0].childNodes;
+
+
+// for (let i = 0; i < wrapperKids.length; i++){
+//   wrapperKids[i].addEventListener("click", wordHead(i));
+// }
+
+// function wordHead(i){
+//   allWords = document.getElementsByClassName("word");
+//   allExpls = document.getElementsByClassName("expl");
+//     allWords[i].className = "p";
+//     allExpls[i].style.display = "none";
+//     console.log(allWords);
+//     i--;
+//   }
+
+   allWords = document.getElementsByClassName("word");
+   allExpls = document.getElementsByClassName("expl");
+
+  for (let i = 0; i < allWords.length; i++){
+    allWords[i].addEventListener("click", wordHead(i));
+  }
+//     allExpls[i].style.display = "none";
+//     console.log(allWords);
+//     i--;
+//   }
+
+// function wordHead(i){
+//   allWords[i].className="p";
+//   allExpls[i].style.display = "inline-block";
 // }
 
 

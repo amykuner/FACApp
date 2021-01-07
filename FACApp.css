@@ -263,6 +263,9 @@ svg{
   z-index: 5;
 }
 
+/* //change class of .word to header on click? */
+/* POSSIBLE SOLUTION TO BUG */
+
 
 .expl{
   display: none;
