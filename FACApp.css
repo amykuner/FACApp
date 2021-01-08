@@ -476,6 +476,7 @@ svg{
   #About-Me {background-image: none;}
   p {font-size: 40px;}
   .expl {font-size: 40px;}
+  .footertext {display: none;}
 }
 
 /* when the screen is above 801pixels the tab buttons show words, otherwise they show vector icons */
@@ -505,7 +506,8 @@ svg{
 
 .scroll-down{
   position: relative;
-  bottom: 2vh; 
+  top: -10vh;
+  /* bottom: 2vh;  */
   padding-bottom: 15vh; 
 }
  
