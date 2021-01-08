@@ -117,7 +117,6 @@ svg{
 }
 
 #diag-box-one {
-  position: relative;
   background-image: linear-gradient(45deg,var(--accent-color), var(--accent-color));
   transform:skewY(10deg);
 }
@@ -132,19 +131,10 @@ svg{
   transform:skewY(-10deg);
 }
  
-#dbo-content {
+.dbcontent {
   transform: skewY(4deg);
   display: inline-block;
-}
-
-#dbo-content-two {
-  transform: skewY(4deg);
-  display: inline-block;
-}
-
-#dbo-content-three {
-  transform: skewY(4deg);
-  display: inline-block;
+  padding: 0 15px 0 15px;
 }
 
 .hero-img {
