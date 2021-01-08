@@ -23,13 +23,9 @@ function horiText(skewVal, BoxID, BoxText){
   skewVal < 0 ? text.style.transform = "skewY(" +  Math.abs(skewVal) + "deg)": text.style.transform = "skewY(-" +  skewVal + "deg)";
   //convert skewval to radians so that js can use it in the tan function
   let skewRad = Math.abs(skewVal)*Math.PI/180;
-  //set text size to 60% of screen and give padding either side - do I need padding??
-  text.style.maxWidth = screen.width*0.6 + "px";
-  text.style.paddingLeft = screen.width*0.1 + "px";
-  text.style.paddingRight = screen.width*0.1 + "px";
   //adds padding to the top and bottom so the text will always fit within the horizontal bounds
-  box.style.paddingTop = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2 + "px";
-  box.style.paddingBottom = Math.tan(skewRad)*(parseInt(text.style.maxWidth))/2 + "px";
+  box.style.paddingTop = Math.tan(skewRad)*30 + "ch";
+  box.style.paddingBottom = Math.tan(skewRad)*30 + "ch";
 }
 
 //setting all the horizontal boxes with the same skew when the page loads

@@ -507,7 +507,6 @@ svg{
 .scroll-down{
   position: relative;
   top: -10vh;
-  /* bottom: 2vh;  */
   padding-bottom: 15vh; 
 }
  
