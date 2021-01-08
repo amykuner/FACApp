@@ -475,6 +475,7 @@ svg{
     grid-row: auto}
   #About-Me {background-image: none;}
   p {font-size: 40px;}
+  .expl {font-size: 40px;}
 }
 
 /* when the screen is above 801pixels the tab buttons show words, otherwise they show vector icons */
@@ -495,6 +496,7 @@ svg{
     grid-row: auto}
   #About-Me {background-image: none;}
   p {font-size: 40px;}
+  .expl {font-size: 40px;}
 }
 
 @media all and (max-width: 1500px){
