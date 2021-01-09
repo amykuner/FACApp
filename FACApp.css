@@ -256,7 +256,7 @@ svg{
 
 .expl{
   display: none;
-  font-size: 1rem;
+  font-size: 0.8rem;
   justify-content:center;
   vertical-align: center;
   padding: 0.1rem;
@@ -451,7 +451,37 @@ svg{
   transition: transform 0.4s linear;
 }
 
-@media all and (max-device-width: 700px){
+@media all and (max-width: 1500px){
+  .flexbox-row {background-image: none;}
+}
+
+@media all and (max-width: 1200px){
+  .expl {font-size: 0.65rem;}
+}
+
+
+/* when the screen is above 801pixels the tab buttons show words, otherwise they show vector icons */
+
+/* @media all and (max-width: 801px){
+  .icon {display:inline-block;}
+  .tabtext {display:none;}
+  .carousel-container {width: 90vw;}
+  .carousel {width: 90vw;}
+  .wrapper {
+    display: grid; 
+    grid-template-columns: 70vw;
+    gap: 15vw;
+    padding-left: 15vw;
+    grid-template-rows: repeat(6, 70vw);}
+
+  .wrapper section{
+    grid-column: auto;
+    grid-row: auto}
+  #About-Me {background-image: none;}
+  .scroll-down {top: -30vh;}
+} */
+
+@media all and (max-device-width: 800px){
   .icon {display:inline-block;}
   .tabtext {display:none;}
   .carousel-container {width: 90vw;}
@@ -471,30 +501,6 @@ svg{
   .expl {font-size: 40px;}
   .footertext {display: none;}
   .scroll-down {top: -30vh;}
-}
-
-/* when the screen is above 801pixels the tab buttons show words, otherwise they show vector icons */
-@media all and (max-width: 801px){
-  .icon {display:inline-block;}
-  .tabtext {display:none;}
-  .carousel-container {width: 90vw;}
-  .carousel {width: 90vw;}
-  .wrapper {
-    display: grid; 
-    grid-template-columns: 70vw;
-    gap: 15vw;
-    padding-left: 15vw;
-    grid-template-rows: repeat(6, 70vw);}
-
-  .wrapper section{
-    grid-column: auto;
-    grid-row: auto}
-  #About-Me {background-image: none;}
-  .scroll-down {top: -30vh;}
-}
-
-@media all and (max-width: 1500px){
-  .flexbox-row {background-image: none;}
 }
 
 .scroll-down{
