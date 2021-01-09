@@ -416,6 +416,7 @@ svg{
   font-weight: 600;
   font-size: 2.5rem;
   padding: 1rem;
+  margin: 0 0 2rem 0;
 }
 
 #dmbutton{
@@ -488,7 +489,6 @@ svg{
     grid-column: auto;
     grid-row: auto}
   #About-Me {background-image: none;}
-  p {font-size: 40px;}
   .expl {font-size: 40px;}
   .scroll-down {top: -30vh;}
 }
