@@ -316,6 +316,7 @@ svg{
   position: relative;
   font-size: 1.2rem;
   padding: 1rem;
+  margin: 0 0 10px 0;
 }
   
 @keyframes fadeEffect{
@@ -489,7 +490,6 @@ svg{
     grid-column: auto;
     grid-row: auto}
   #About-Me {background-image: none;}
-  .expl {font-size: 40px;}
   .scroll-down {top: -30vh;}
 }
 
