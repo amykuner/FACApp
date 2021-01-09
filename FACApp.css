@@ -462,7 +462,7 @@ svg{
 
 /* when the screen is above 801pixels the tab buttons show words, otherwise they show vector icons */
 
-/* @media all and (max-width: 801px){
+@media all and (max-width: 801px){
   .icon {display:inline-block;}
   .tabtext {display:none;}
   .carousel-container {width: 90vw;}
@@ -479,7 +479,7 @@ svg{
     grid-row: auto}
   #About-Me {background-image: none;}
   .scroll-down {top: -30vh;}
-} */
+}
 
 @media all and (max-device-width: 800px){
   .icon {display:inline-block;}
