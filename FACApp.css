@@ -367,6 +367,7 @@ svg{
  padding: 1rem;
  color: var(--main-text);
  position: relative;
+ cursor: pointer;
 }
 
 .new-game{
