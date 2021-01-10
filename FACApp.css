@@ -172,6 +172,7 @@ svg{
   background-image: var(--bg-circle);
   background-repeat: no-repeat;
   background-size: 100%;
+  transition: 0.5s ease;
 } 
 
 .text-one-home{
