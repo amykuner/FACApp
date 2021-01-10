@@ -287,6 +287,7 @@ svg{
   opacity: 0.7;
   border: none;
   height: 10vh;
+  width: 5vh;
   top: 12vw;
   cursor: pointer;
 }
@@ -436,7 +437,7 @@ svg{
     gap: 15vw;
     padding-left: 15vw;
     grid-template-rows: repeat(6, 70vw);
-    padding-top: 10vw;
+    padding-top: 12vw;
     padding-bottom: 20vw;}
 
   .wrapper section{
@@ -446,9 +447,6 @@ svg{
 
   .expl {font-size: 1rem;}
 }
-
-
-/* when the screen is above 801pixels the tab buttons show words, otherwise they show vector icons */
 
 @media all and (max-width: 800px){
   .icon {display:inline-block;}
@@ -470,7 +468,9 @@ svg{
     grid-template-columns: 70vw;
     gap: 15vw;
     padding-left: 15vw;
-    grid-template-rows: repeat(6, 70vw);}
+    grid-template-rows: repeat(6, 70vw);
+    padding-top: 12vw;
+    padding-bottom: 20vw;}
   .wrapper section{
     grid-column: auto;
     grid-row: auto}
