@@ -14,13 +14,9 @@ function  chooseTab(event, tabName){
     //setting the home tab as our first page
 document.getElementById("homeButton").click();
 
-//function to change the diagonal background sections but keep text horizontal - purely to experiment while deciding on style
-function horiText(skewVal, BoxID, BoxText){
+//function to add padding to boxes
+function horiText(skewVal, BoxID){
   var box = document.getElementById(BoxID);
-  var text = document.getElementById(BoxText);
-  //skew box and then unskew text by skewval so it's horizontal
-  box.style.transform = "skewY(" + skewVal + "deg)";
-  skewVal < 0 ? text.style.transform = "skewY(" +  Math.abs(skewVal) + "deg)": text.style.transform = "skewY(-" +  skewVal + "deg)";
   //convert skewval to radians so that js can use it in the tan function
   let skewRad = Math.abs(skewVal)*Math.PI/180;
   //adds padding to the top and bottom so the text will always fit within the horizontal bounds
@@ -28,15 +24,16 @@ function horiText(skewVal, BoxID, BoxText){
   box.style.paddingBottom = Math.tan(skewRad)*30 + "ch";
 }
 
-//setting all the horizontal boxes with the same skew when the page loads
-horiText(8, "diag-box-one", "dbo-content");
-horiText(8, "diag-box-two", "dbo-content-two");
-horiText(8, "diag-box-three", "dbo-content-three");
+//setting all the horizontal boxes with correct padding
+horiText(8, "diag-box-one");
+horiText(8, "diag-box-two");
+horiText(8, "diag-box-three");
 
 //define the elements of the image carousel for the functions below
 var pics = Array.from(document.getElementsByClassName("carousel"));
 var cartext = Array.from(document.getElementsByClassName("carouseltext"));
 
+//image carousel pics and text hidden unless chosen
 function carousel(current){
   for(let i = 0; i < pics.length; i++){
     pics[i].style.display = "none"; //hides all carousel photos
@@ -45,8 +42,11 @@ function carousel(current){
     cartext[pics.indexOf(current)].style.display = "inline-block"; //selects the corresponding text block
   }
 }
+
+//show image one as default
 carousel(document.getElementById("carOne"));
 
+//switches to next picture in carousel
 function nextPic(){
   for(let i = 0; i < pics.length; i++){
     if(pics[i].style.display == "inline-block"){
@@ -54,6 +54,7 @@ function nextPic(){
   return;
 }}}
 
+//switches to previous picture in carousel
 function prevPic(){
   for(let i = 0; i < pics.length; i++){
     if(pics[i].style.display == "inline-block"){-
@@ -61,21 +62,24 @@ function prevPic(){
   return;
 }}}
 
+//sets the footer as flat on the bottom of the screen - no excess scroll unless necessary
 function footerFlat(tabName){
   document.getElementById(tabName).scrollHeight + (window.innerHeight * 0.06) + (window.innerWidth* 0.04) <= window.innerHeight? document.body.style.paddingBottom = 0: document.body.style.paddingBottom = "8.5vw";
 } 
 
+//triggers dark mode
 function darkMode(){
     document.documentElement.classList.toggle("dark");
   }
 document.getElementById("dmbutton").addEventListener("click", darkMode);
 
-
+//moves the ball on dark mode switch
 function dmBall(){
   document.documentElement.className == "dark" ? document.getElementById("dmball").style.transform = "translateX(30px)" : document.getElementById("dmball").style.transform = "translateX(0px)";
 }
 document.getElementById("dmbutton").addEventListener("click", dmBall);
 
+//sets dark mdoe if user has dark mode settings on
 function startMode(){
   if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
     darkMode();
@@ -85,16 +89,12 @@ function startMode(){
 
 startMode();
 
-//function flip(section){
-  //.words.style.display = "none";
-  //.expl.style.display = "inline-block";
-//}
-
 var cards = document.querySelectorAll("div.cards");
 var higher = document.getElementById("higher");
 var lower = document.getElementById("lower");
 
-//STREAMLINE FUNCTION
+//NEED TO STREAMLINE FUNCTION
+//game function 
 function higherLower(){
 //makes all backgrounds standard on reset
 for (let i = 0; i < cards.length; i++){
