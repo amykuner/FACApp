@@ -192,9 +192,3 @@ function numberCards(number){
   }
   return letter;
 }
-
-//overflow function:
-// while <  && parseint size >= 20
-//expl.text.style = parseint() - 1 + "px"
-//
-//

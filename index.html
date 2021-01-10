@@ -26,7 +26,7 @@
       <nav class="tab">
         <button class="tablinks" onclick="chooseTab(event, 'Home'); footerFlat('Home')" id="homeButton">
           <span class="icon"> <i class="fas fa-home"></i></span>
-          <span class="tabtext">Home</span>
+          <span class="tabtext"> Home </span>
         </button>
         <button class="tablinks" onclick="chooseTab(event, 'Why FAC'); footerFlat('Why FAC')" id="WFACButton">
           <span class="icon"> <i class="far fa-question-circle"></i></span>
@@ -38,11 +38,11 @@
         </button>
         <button class="tablinks" onclick="chooseTab(event, 'Links'); footerFlat('Links')" id="aboutMeButton">
           <span class="icon"> <i class="fas fa-link"></i></span>
-          <span class="tabtext">Links</span>
+          <span class="tabtext"> Links </span>
         </button>
         <button class="tablinks" onclick="chooseTab(event, 'Game'); footerFlat('Game')" id="gameButton">
           <span class="icon"><i class="fas fa-dice"></i></span>
-          <span class="tabtext">Game</span>
+          <span class="tabtext"> Game </span>
         </button>
       </nav>
       
@@ -188,42 +188,30 @@
           <h2>Higher or Lower?</h2>
         </header>
         <p>Here is one of my favourite solo card games! It's simple - look at the last card that was turned over, and guess if the next one will be higher or lower. Click 'New Game' to get started. Remember: Aces are LOW. </p>
+        
         <div class="card-container">
           <div class=hlbuttons>
-            <button id="higher">
-              Higher
-            </button>
-            <button id="lower">
-              Lower
-            </button>
+            <button id="higher">Higher</button>
+            <button id="lower">Lower</button>
           </div>
+
           <div class="row4">
             <button class="new-game" onclick=higherLower()>New game</button>
           </div>
+
           <div class="row3">
-            <div class="cards" id="card1">
-
-            </div>
-            <div class="cards" id="card2">
-
-            </div>
-            <div class="cards" id="card3">
-
-            </div>
+            <div class="cards" id="card1"></div>
+            <div class="cards" id="card2"></div>
+            <div class="cards" id="card3"></div>
           </div>
 
           <div class="row2">
-            <div class="cards" id="card4">
+            <div class="cards" id="card4"></div>
+            <div class="cards" id="card5"></div>
+          </div>
 
-            </div>
-            <div class="cards" id="card5">
-      
-            </div>
-            </div>
           <div class="row1">
-            <div class="cards" id="card6">
-
-            </div>
+            <div class="cards" id="card6"></div>
           </div>
         </div>
         </div>
