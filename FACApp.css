@@ -74,6 +74,7 @@ svg{
   border: none;
 }
 
+/* TABS */
 .tab button{
   color: var(--main-text);
   background-color: var(--background);
@@ -91,6 +92,11 @@ svg{
   color: #D5E4EC;
   background-color:var(--accent-color);
 }
+
+.icon{
+  display: none;
+  font-size: 10vw;
+}
   
 .tabcontent {
    display: none;
@@ -98,6 +104,7 @@ svg{
    animation: fadeEffect 1s;
 }
 
+/* HOMEPAGE */
 .hero-img {
   background-image: var(--hero-url);
   height: 80vh;
@@ -138,23 +145,11 @@ svg{
   padding: 0 30px 0 30px;
 }
 
-.flexbox-row{
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  background-image: var(--bg-dots);
-  background-repeat: no-repeat;
-  background-size: 70%;
-  background-position: center;
-  background-attachment: fixed;
-}
-
+/* WHY FAC */
 .wrapper{
   display: grid;
   grid-template-columns:repeat(16, 1fr);
   grid-template-rows: repeat(7, 6.25vw);
-  gap: 0;
   padding: 0 2vw 0 0;
   background-image: var(--bg-dots);
   background-repeat: no-repeat;
@@ -163,10 +158,7 @@ svg{
   background-attachment: fixed;
 }
 
-.wrapper p{color: var(--main-text);}
-
 .wrapper section{
-  z-index: 3;
   display:flex;
   align-items: center;
   justify-content: center;
@@ -218,20 +210,6 @@ svg{
   grid-column-end: 16;
 }
 
-.wrapper section:hover .expl, .wrapper section:active .expl{
-  display: inline-block;
-}
-
-.wrapper section:hover .word, .wrapper section:active .word{
-  display: none;
-}
-
-.wrapper section:hover, .wrapper section:active{
-  transform: scale(1.4);
-  box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.15);
-  z-index: 5;
-}
-
 .expl{
   display: none;
   font-size: 0.8rem;
@@ -248,25 +226,17 @@ svg{
   vertical-align: center;
 }
 
-.footer{
-  width: 100%;
-  position: absolute; 
+.wrapper section:hover .expl, .wrapper section:active .expl{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  bottom: 0;
-  height: 4vh;
-  margin-top: 10rem;
-  font-size: 0.9rem;
 }
 
-.icon{
+.wrapper section:hover .word, .wrapper section:active .word{
   display: none;
-  font-size: 10vw;
 }
 
-.tabtext{
-  display: inline-block;
+.wrapper section:hover, .wrapper section:active{
+  transform: scale(1.4);
+  box-shadow: 0 1.5rem 2rem rgba(0,0,0,0.15);
 }
 
 .carousel-container{
@@ -327,6 +297,18 @@ svg{
   right: -10px;
 }
 
+.flexbox-row{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: var(--bg-dots);
+  background-repeat: no-repeat;
+  background-size: 70%;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 .card-container{
   margin: 0;
   display: flex;  
@@ -381,6 +363,19 @@ svg{
   text-align: center;
   font-size: 2.5rem;
   padding:1rem;
+}
+
+/* FOOTER */
+.footer{
+  width: 100%;
+  position: absolute; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  height: 4vh;
+  margin-top: 10rem;
+  font-size: 0.9rem;
 }
 
 .hlbuttons button{
