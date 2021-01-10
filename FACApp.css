@@ -319,7 +319,7 @@ svg{
 
 /* GAME */
 .card-container{
-  margin: 0;
+  margin: 0 0 2rem 0;
   display: flex;  
   flex-direction: column-reverse;
   background-image: var(--bg-carousel);
@@ -387,7 +387,6 @@ svg{
   align-items: center;
   bottom: 0;
   height: 4vh;
-  margin-top: 10rem;
   font-size: 0.9rem;
 }
 
