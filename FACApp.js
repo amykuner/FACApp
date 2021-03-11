@@ -57,7 +57,7 @@ function nextPic(){
 //switches to previous picture in carousel
 function prevPic(){
   for(let i = 0; i < pics.length; i++){
-    if(pics[i].style.display == "inline-block"){-
+    if(pics[i].style.display == "inline-block"){
   i == 0 ? carousel(pics[pics.length -1]) : carousel(pics[i - 1]);
   return;
 }}}
@@ -79,7 +79,7 @@ function dmBall(){
 }
 document.getElementById("dmbutton").addEventListener("click", dmBall);
 
-//sets dark mdoe if user has dark mode settings on
+//sets dark mode if user has dark mode settings on
 function startMode(){
   if(window.matchMedia('(prefers-color-scheme: dark)').matches == true){
     darkMode();
@@ -102,43 +102,41 @@ for (let i = 0; i < cards.length; i++){
   cards[i].textContent = "";
 }
   var randoms = [];
-  //show first card
+  //next section shows first card
   randoms.push(Math.floor(Math.random()*13) + 1);
+  //makes picture cards turn into letters rather than numbers
   if (randoms[0] == 1||randoms[0] == 11||randoms[0] == 12||randoms[0] == 13){
     cards[0].textContent = numberCards(randoms[0]);
   } else{
     cards[0].textContent = randoms[0];
   }
   cards[0].className = "cards-selected";
-  higher.style.display="inline-block";
-  lower.style.display="inline-block";
+  switchVisibility();
 
   var i = 0;
 
-      higher.onclick = function(){
-        if(i < 5){
-         randoms.push(Math.floor(Math.random()*13) + 1);
-          cards[i+1].className = "cards-selected";
-          if (randoms[i+1] == 1||randoms[i+1] == 11||randoms[i+1] == 12||randoms[i+1] == 13){
-            cards[i+1].textContent = numberCards(randoms[i+1]);
-          } else{
-            cards[i+1].textContent = randoms[i+1];
-          }
+  higher.onclick = function(){
+    if(i < 5){
+      randoms.push(Math.floor(Math.random()*13) + 1);
+      cards[i+1].className = "cards-selected";
+      if (randoms[i+1] == 1||randoms[i+1] == 11||randoms[i+1] == 12||randoms[i+1] == 13){
+        cards[i+1].textContent = numberCards(randoms[i+1]);
+        } else{
+          cards[i+1].textContent = randoms[i+1];
+        }
           if (randoms[i+1] >= randoms[i]){
             if(i == 4){
               alert("Congratulations! You are the master of probability! You can't stop when you're on a winning streak, so select 'New Game' to play again.")
-              higher.style.display="none";
-              lower.style.display="none";
-            }
+              switchVisibility();
+          }
             else{
-            i++;
+              i++;
             }
           } else {
-          i=+ 5;
-          alert("Uh oh. Looks like you got beaten by probability! Click 'New Game' to try again.");
-          higher.style.display="none";
-          lower.style.display="none";
-          return;
+            i=+ 5;
+            alert("Uh oh. Looks like you got beaten by probability! Click 'New Game' to try again.");
+            switchVisibility();
+            return;
           }
         }
       }
@@ -155,8 +153,7 @@ for (let i = 0; i < cards.length; i++){
           if(randoms[i+1] <= randoms[i]){
             if(i == 4){
               alert("Congratulations! You are the master of probability! You can't stop when you're on a winning streak, so select 'New Game' to play again.")
-              higher.style.display="none";
-              lower.style.display="none";
+              switchVisibility()
             }
             else{
               i++;
@@ -164,14 +161,13 @@ for (let i = 0; i < cards.length; i++){
           } else {
             i=+ 5;
             alert("Uh oh. Looks like you got beaten by probability! Click 'New Game' to try again.");
-            higher.style.display="none";
-            lower.style.display="none";
+            switchVisibility()
             return;
         }
       } 
     }
   }
-//streamline this function
+//if time, streamline this function, split into smaller functions and callback!!
 
 //create card function to call within higherlower where if random number is 11 12 13 it returns jack queen king instead
 function numberCards(number){
@@ -191,4 +187,9 @@ function numberCards(number){
       break;
   }
   return letter;
+}
+
+function switchVisibility(){
+  higher.style.visibility="visible";
+  lower.style.visibility="visible";
 }

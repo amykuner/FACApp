@@ -102,6 +102,11 @@ svg{
    display: none;
    border: none;  
    animation: fadeEffect 1s;
+  }
+
+.centerbg{
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 /* HOMEPAGE */
@@ -160,7 +165,6 @@ svg{
   background-image: var(--bg-dots);
   background-repeat: no-repeat;
   background-size: 70%;
-  background-position: center;
   background-attachment: fixed;
 }
 
@@ -170,7 +174,6 @@ svg{
   justify-content: center;
   background-position: center;
   background-image: var(--bg-circle);
-  background-repeat: no-repeat;
   background-size: 100%;
   transition: 0.5s ease;
 } 
@@ -320,6 +323,9 @@ svg{
 }
 
 /* GAME */
+
+
+
 .card-container{
   margin: 0 0 2rem 0;
   display: flex;  
@@ -377,7 +383,7 @@ svg{
 
 .hlbuttons button{
   background-color: var(--accent-color);
-  display: none;
+  visibility:hidden;
   margin: 0 0 2rem 0;
 }
 
