@@ -265,6 +265,13 @@ svg{
   height:60vh;
 } 
 
+.carousel-slide {
+  display:flex;
+  width: 100%;
+  
+  overflow: hidden;
+}
+
 .carousel{
   position: relative;
   width: 50vw;
