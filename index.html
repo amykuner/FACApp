@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-  <html>
+  <html lang="en-gb">
     <head>
       <link rel="stylesheet" href="FACApp.css">
       <script src="https://kit.fontawesome.com/cf011bc379.js" crossorigin="anonymous"></script>
@@ -21,29 +21,28 @@
       <meta name="msapplication-TileColor" content="#ffffff">
       <meta name="msapplication-TileImage" content="./Images/favicons/ms-icon-144x144.png">
       <meta name="theme-color" content="#ffffff">
-      <meta charset="utf-8">
-      <meta name="language" content="english"> 
+      <meta charset="utf-8">      
       <title> Amy Kuner FAC Application Site </title>
     </head>
     <body>
       <nav class="tab">
-        <button class="tablinks" onclick="chooseTab(event, 'Home'); footerFlat('Home')" id="homeButton">
+        <button class="tablinks" onclick="chooseTab(event, 'Home'); footerFlat('Home')" id="homeButton" aria-label="Home Tab">
           <span class="icon"> <i class="fas fa-home"></i></span>
           <span class="tabtext"> Home </span>
         </button>
-        <button class="tablinks" onclick="chooseTab(event, 'Why FAC'); footerFlat('Why FAC')" id="WFACButton">
+        <button class="tablinks" onclick="chooseTab(event, 'Why FAC'); footerFlat('Why FAC')" id="WFACButton" aria-label="Why Founders and Coders Tab">
           <span class="icon"> <i class="far fa-question-circle"></i></span>
           <span class="tabtext"> Why FAC? </span>
         </button>
-        <button class="tablinks" onclick="chooseTab(event, 'About-Me'); footerFlat('About-Me')" id="OSButton">
+        <button class="tablinks" onclick="chooseTab(event, 'About-Me'); footerFlat('About-Me')" id="aboutMeButton" aria-label="About Me Tab">
           <span class="icon"> <i class="far fa-user-circle"></i></span>
           <span class="tabtext"> About Me </span>
         </button>
-        <button class="tablinks" onclick="chooseTab(event, 'Links'); footerFlat('Links')" id="aboutMeButton">
+        <button class="tablinks" onclick="chooseTab(event, 'Links'); footerFlat('Links')" id="linksButton" aria-label="Links Tab">
           <span class="icon"> <i class="fas fa-link"></i></span>
           <span class="tabtext"> Links </span>
         </button>
-        <button class="tablinks" onclick="chooseTab(event, 'Game'); footerFlat('Game')" id="gameButton">
+        <button class="tablinks" onclick="chooseTab(event, 'Game'); footerFlat('Game')" id="gameButton" aria-label="Game Tab">
           <span class="icon"><i class="fas fa-dice"></i></span>
           <span class="tabtext"> Game </span>
         </button>
@@ -58,7 +57,7 @@
           </hgroup>
         </header>
         <div class="scroll-down">
-          <a href="#dbo-content">
+          <a href="#dbo-content" aria-label="Read main content">
           <i class="fas fa-chevron-down"></i>
           </a>
         </div>
